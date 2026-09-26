@@ -14,6 +14,23 @@
 | `site/index.html` | 블로그 화면 (지금 TOP 10 / 시간대별 기록 / 자주 올라온 키워드) |
 | `tests/test_parse.py` | 파싱·기록 쌓기 테스트 |
 
+## 인트로 영상 (MARKET PULSE 쇼릴)
+
+블로그 첫 방문 때 15초짜리 모션그래픽 인트로가 재생됩니다. 영상·음악 파일이나 외부 서비스 없이 **코드로만** 그리고 연주합니다.
+
+| 파일 | 역할 |
+|---|---|
+| `site/reel/reel.js` | 영상 전체(캔버스 애니메이션)와 사운드트랙(Web Audio 합성)을 만드는 코드 |
+| `site/reel/market-pulse.mp4` | 같은 코드를 프레임별로 녹화한 MP4 (1920×1080, 60fps, 사운드 포함) |
+| `scripts/render_reel.mjs` | MP4 다시 만들기 (Playwright + ffmpeg) |
+
+- 다시 보기: 블로그의 "▶ 인트로 영상 다시 보기" 버튼, 또는 주소 끝에 `#intro`
+- 블로그 인트로는 매번 **최신 검색어 TOP 10**을 영상 속에 넣어 보여 줌 (MP4는 만든 시점 기준)
+
+```bash
+NODE_PATH=$(npm root -g) FFMPEG=/path/to/ffmpeg node scripts/render_reel.mjs --fps 60
+```
+
 ## 처음 한 번만 설정
 
 1. 저장소 **Settings → Pages → Build and deployment → Source** 를 **GitHub Actions** 로 변경
