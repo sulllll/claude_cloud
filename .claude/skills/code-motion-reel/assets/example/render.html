@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Reel render</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@500;700;900&family=Space+Grotesk:wght@500;700&display=block">
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head>
+<body>
+<!-- Offscreen render target used by scripts/render_reel.mjs to export the MP4 frame by frame. -->
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="reel.js"></script>
+<script>
+  const ctx = document.getElementById('c').getContext('2d');
+  let data = null;
+  window.ready = (async () => {
+    try { data = Reel.dataFrom(await (await fetch('../data/latest.json', { cache: 'no-store' })).json()); } catch (e) {}
+    await Reel.loadFonts(15000);
+    return { fonts: [...document.fonts].filter(f => f.status === 'loaded').map(f => f.family + ' ' + f.weight), keywords: data ? data.keywords.length : 0 };
+  })();
+  window.renderAt = (t, q) => { Reel.frame(ctx, t, data); return ctx.canvas.toDataURL('image/jpeg', q || 0.93); };
+  window.renderAudio = async () => {
+    const sr = 48000, oac = new OfflineAudioContext(2, Math.ceil(sr * Reel.DURATION), sr);
+    Reel.buildAudio(oac, 0, 0);
+    const buf = await oac.startRendering();
+    const L = buf.getChannelData(0), R = buf.getChannelData(1), n = L.length;
+    const out = new DataView(new ArrayBuffer(44 + n * 4));
+    const w = (o, s) => [...s].forEach((c, i) => out.setUint8(o + i, c.charCodeAt(0)));
+    w(0, 'RIFF'); out.setUint32(4, 36 + n * 4, true); w(8, 'WAVEfmt '); out.setUint32(16, 16, true);
+    out.setUint16(20, 1, true); out.setUint16(22, 2, true); out.setUint32(24, sr, true); out.setUint32(28, sr * 4, true);
+    out.setUint16(32, 4, true); out.setUint16(34, 16, true); w(36, 'data'); out.setUint32(40, n * 4, true);
+    let peak = 0;
+    for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(L[i]), Math.abs(R[i]));
+    const g = peak > 0.98 ? 0.98 / peak : 1;
+    for (let i = 0; i < n; i++) {
+      out.setInt16(44 + i * 4, Math.max(-1, Math.min(1, L[i] * g)) * 32767, true);
+      out.setInt16(46 + i * 4, Math.max(-1, Math.min(1, R[i] * g)) * 32767, true);
+    }
+    let bin = ''; const bytes = new Uint8Array(out.buffer);
+    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+    return { wav: btoa(bin), peak };
+  };
+</script>
+</body>
+</html>
