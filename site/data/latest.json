@@ -1,17 +1,25 @@
 {
-  "collected_at": "2026-09-26 23:53",
+  "collected_at": "2026-09-27 00:14",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
       "keyword": "왕사남",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news_title": "1692만 흥행작 ‘왕과 사는 남자’, 오늘(26일) 추석 특선 영화 방송",
       "news_url": "https://www.mk.co.kr/news/broadcasting-service/12156590",
       "search_url": "https://www.google.com/search?q=%EC%99%95%EC%82%AC%EB%82%A8"
     },
     {
       "rank": 2,
+      "keyword": "지선",
+      "traffic": "200+",
+      "news_title": "600대 1 경쟁률 뚫었는데…러브홀릭 지선, 팀 탈퇴한 이유?(‘백투더뮤직2’) - 스타투데이",
+      "news_url": "https://www.mk.co.kr/news/broadcasting-service/12161642",
+      "search_url": "https://www.google.com/search?q=%EC%A7%80%EC%84%A0"
+    },
+    {
+      "rank": 3,
       "keyword": "오원석",
       "traffic": "200+",
       "news_title": "김도영도 노시환도 놀랐다! 일본서 뛰는데 한국 같은 이 느낌…K-응원과 함께 金 간다 [AG 현장]",
@@ -19,23 +27,23 @@
       "search_url": "https://www.google.com/search?q=%EC%98%A4%EC%9B%90%EC%84%9D"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "keyword": "휴게소",
-      "traffic": "2000+",
+      "traffic": "5000+",
       "news_title": "10명 숨지고 92명 다쳤다…불안한 '휴게소 안전'",
-      "news_url": "https://v.daum.net/v/Ff28B2OcUA",
+      "news_url": "https://v.daum.net/v/20260926173606543",
       "search_url": "https://www.google.com/search?q=%ED%9C%B4%EA%B2%8C%EC%86%8C"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "keyword": "조현아",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news_title": "'17㎏ 감량' 조현아, 몰라보게 늘씬해진 모습 '눈길'",
       "news_url": "https://www.segye.com/newsView/20260926503910",
       "search_url": "https://www.google.com/search?q=%EC%A1%B0%ED%98%84%EC%95%84"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "keyword": "lotto result 6/45",
       "traffic": "200+",
       "news_title": "",
@@ -43,7 +51,7 @@
       "search_url": "https://www.google.com/search?q=lotto%20result%206/45"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "keyword": "sbs",
       "traffic": "200+",
       "news_title": "Elevator Breakdown at Daejeon Hypermarket Traps 5 People Before Rescue",
@@ -51,7 +59,7 @@
       "search_url": "https://www.google.com/search?q=sbs"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "keyword": "한소희",
       "traffic": "2000+",
       "news_title": "'인턴' 한소희가 선택한 구리 52억 펜트하우스는[누구집]",
@@ -59,7 +67,7 @@
       "search_url": "https://www.google.com/search?q=%ED%95%9C%EC%86%8C%ED%9D%AC"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "keyword": "정시아",
       "traffic": "1000+",
       "news_title": "정시아 \"VIP 조리원, 아이 딱 4명...양현석 아들도 있었다\" - 머니투데이",
@@ -67,20 +75,12 @@
       "search_url": "https://www.google.com/search?q=%EC%A0%95%EC%8B%9C%EC%95%84"
     },
     {
-      "rank": 9,
-      "keyword": "로또",
-      "traffic": "10000+",
-      "news_title": "[속보]1243회 로또 당첨번호 9·18·24·38·43·44…보너스 35 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/society/2026/09/26/2026092622323376096",
-      "search_url": "https://www.google.com/search?q=%EB%A1%9C%EB%98%90"
-    },
-    {
       "rank": 10,
-      "keyword": "경복궁",
-      "traffic": "5000+",
-      "news_title": "사진탐방 | 추석 끝자락, \"경복궁과 백악산\"",
-      "news_url": "https://www.djournal.co.kr/news/article.html?no=119313",
-      "search_url": "https://www.google.com/search?q=%EA%B2%BD%EB%B3%B5%EA%B6%81"
+      "keyword": "로또",
+      "traffic": "20000+",
+      "news_title": "1243회 로또 1등 ‘9, 18, 24, 38, 43, 44’",
+      "news_url": "https://www.khan.co.kr/article/202609262248001",
+      "search_url": "https://www.google.com/search?q=%EB%A1%9C%EB%98%90"
     }
   ]
 }
