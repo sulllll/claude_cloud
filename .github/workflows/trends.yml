@@ -1,0 +1,70 @@
+name: Trends to blog
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # every hour at :07 (UTC); GitHub may delay scheduled runs a bit
+  workflow_dispatch:       # "Run workflow" button in the Actions tab
+  push:
+    paths:
+      - "site/index.html"
+      - "scripts/**"
+      - ".github/workflows/trends.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: trends
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    env:
+      HAS_SHEET_SECRET: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Install Google Sheets client (only when the secret exists)
+        if: ${{ env.HAS_SHEET_SECRET == 'true' }}
+        run: pip install gspread
+
+      - name: Fetch Google Trends top 10
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          SHEET_ID: ${{ vars.SHEET_ID || '1Xo11DuP6My3_L3E4Ce4FsMo9snb9ERpt03ECcwmtV8E' }}
+        run: python scripts/fetch_trends.py
+
+      - name: Commit the new snapshot
+        run: |
+          git config user.name "trends-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data
+          git commit -m "data: trends snapshot $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')" || echo "nothing to commit"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

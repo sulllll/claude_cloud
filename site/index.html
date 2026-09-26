@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>실시간 트렌드 기록</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70;
+    --line: #e4e4e0; --accent: #2f6fed; --accent-soft: #e8f0fe; --up: #d93b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141416; --card: #1e1e21; --text: #ececee; --muted: #9a9aa0;
+      --line: #2e2e33; --accent: #7aa7ff; --accent-soft: #1f2a44; --up: #ff7b7b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+    line-height: 1.5;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  header p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 20px; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 12px; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .card h2 small { color: var(--muted); font-weight: 400; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  li.row { display: grid; grid-template-columns: 2.2rem 1fr auto; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
+  li.row:first-child { border-top: 0; }
+  .rank { font-weight: 700; font-size: 1.1rem; color: var(--accent); text-align: center; }
+  .kw a { color: var(--text); font-weight: 600; text-decoration: none; }
+  .kw a:hover { text-decoration: underline; }
+  .kw .news { display: block; color: var(--muted); font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .kw .news a { color: var(--muted); font-weight: 400; }
+  .traffic { font-size: .8rem; color: var(--up); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; white-space: nowrap; }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  select, a.btn { font: inherit; font-size: .9rem; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--text); text-decoration: none; }
+  .empty { color: var(--muted); padding: 12px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+  th, td { text-align: left; padding: 6px 4px; border-top: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 500; }
+  .num { text-align: right; white-space: nowrap; }
+  footer { color: var(--muted); font-size: .8rem; margin-top: 28px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>📈 실시간 트렌드 기록</h1>
+    <p>구글 트렌드(대한민국) 인기 검색어 1~10위를 매시간 자동으로 모아 쌓아 둡니다.</p>
+  </header>
+
+  <section class="card">
+    <h2>지금 TOP 10 <small id="latest-time">불러오는 중…</small></h2>
+    <ol id="latest"></ol>
+  </section>
+
+  <section class="card">
+    <h2>시간대별 기록</h2>
+    <div class="controls">
+      <select id="snap-select" aria-label="수집 시각 선택"></select>
+      <a class="btn" href="data/history.csv" download>CSV 받기</a>
+    </div>
+    <ol id="snapshot"></ol>
+  </section>
+
+  <section class="card">
+    <h2>자주 올라온 키워드 <small>기록 전체 기준</small></h2>
+    <table>
+      <thead><tr><th>키워드</th><th class="num">등장 횟수</th><th class="num">최고 순위</th></tr></thead>
+      <tbody id="ranking"></tbody>
+    </table>
+  </section>
+
+  <footer>GitHub Actions가 매시간 자동으로 갱신합니다 · 데이터 출처: Google Trends</footer>
+</main>
+
+<script>
+function el(tag, attrs = {}, text) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+
+function renderList(target, items) {
+  target.replaceChildren();
+  if (!items || !items.length) {
+    target.append(el("li", { class: "empty" }, "아직 수집된 데이터가 없어요. 첫 자동 수집을 기다리는 중입니다."));
+    return;
+  }
+  for (const it of items) {
+    const li = el("li", { class: "row" });
+    li.append(el("span", { class: "rank" }, it.rank));
+    const kw = el("div", { class: "kw" });
+    kw.append(el("a", { href: it.search_url, target: "_blank", rel: "noopener" }, it.keyword));
+    if (it.news_title) {
+      const news = el("span", { class: "news" });
+      news.append(it.news_url
+        ? el("a", { href: it.news_url, target: "_blank", rel: "noopener" }, it.news_title)
+        : document.createTextNode(it.news_title));
+      kw.append(news);
+    }
+    li.append(kw);
+    li.append(el("span", { class: "traffic" }, it.traffic ? it.traffic + " 검색" : "-"));
+    target.append(li);
+  }
+}
+
+function renderRanking(history) {
+  const stats = new Map();
+  for (const snap of history) {
+    for (const it of snap.items) {
+      const s = stats.get(it.keyword) || { count: 0, best: 99 };
+      s.count += 1;
+      s.best = Math.min(s.best, it.rank);
+      stats.set(it.keyword, s);
+    }
+  }
+  const tbody = document.getElementById("ranking");
+  tbody.replaceChildren();
+  const top = [...stats.entries()].sort((a, b) => b[1].count - a[1].count || a[1].best - b[1].best).slice(0, 15);
+  if (!top.length) {
+    const tr = el("tr");
+    tr.append(el("td", { colspan: "3", class: "empty" }, "기록이 쌓이면 여기에 표시돼요."));
+    tbody.append(tr);
+    return;
+  }
+  for (const [kw, s] of top) {
+    const tr = el("tr");
+    tr.append(el("td", {}, kw), el("td", { class: "num" }, s.count + "회"), el("td", { class: "num" }, s.best + "위"));
+    tbody.append(tr);
+  }
+}
+
+async function load() {
+  let history = [];
+  try {
+    const res = await fetch("data/history.json", { cache: "no-store" });
+    if (res.ok) history = await res.json();
+  } catch (e) { /* no data yet */ }
+
+  const latest = history[0];
+  document.getElementById("latest-time").textContent = latest ? latest.collected_at + " (한국시간)" : "수집 대기 중";
+  renderList(document.getElementById("latest"), latest && latest.items);
+
+  const select = document.getElementById("snap-select");
+  select.replaceChildren();
+  history.forEach((snap, i) => select.append(el("option", { value: i }, snap.collected_at)));
+  const showSnap = () => renderList(document.getElementById("snapshot"), history[select.value] && history[select.value].items);
+  select.onchange = showSnap;
+  showSnap();
+
+  renderRanking(history);
+}
+
+load();
+</script>
+</body>
+</html>
