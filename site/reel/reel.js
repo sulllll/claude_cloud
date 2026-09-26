@@ -921,7 +921,9 @@
     const master = ac.createGain(); master.gain.value = 0.9;
     const comp = ac.createDynamicsCompressor();
     comp.threshold.value = -16; comp.ratio.value = 5; comp.attack.value = 0.003; comp.release.value = 0.2;
-    master.connect(comp); comp.connect(ac.destination);
+    // Chrome's compressor adds make-up gain; trim after it so live playback never clips.
+    const out = ac.createGain(); out.gain.value = 0.5;
+    master.connect(comp); comp.connect(out); out.connect(ac.destination);
     const sr = ac.sampleRate;
     const noise = ac.createBuffer(1, sr * 2, sr);
     { const d = noise.getChannelData(0), r = rng(11); for (let i = 0; i < d.length; i++) d[i] = r() * 2 - 1; }
@@ -1095,6 +1097,11 @@
     impact(13.5);
     pad(13.5, 1.5, [N.A3, N.C4, N.E4, 493.88], 0.05);
     bell(14.0, 1, 0.22);
+    // fade the tail out with the picture
+    if (offset < DURATION) {
+      out.gain.setValueAtTime(0.5, T(Math.max(14.3, offset)));
+      out.gain.linearRampToValueAtTime(0.0001, T(DURATION));
+    }
     return master;
   }
 

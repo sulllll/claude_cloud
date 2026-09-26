@@ -1,10 +1,10 @@
 // Render site/reel/reel.js to an MP4 (video + synthesized soundtrack), frame by frame.
 //
-//   NODE_PATH=$(npm root -g) FFMPEG=/path/to/ffmpeg node scripts/render_reel.mjs [--fps 60] [--stills 1,4.6,13.3]
+//   NODE_PATH=$(npm root -g) FFMPEG=/path/to/ffmpeg node scripts/render_reel.mjs [--fps 60] [--stills 1,4.6,13.3] [--remux]
 //
 // Needs Playwright (Chromium) and ffmpeg. No external video or audio services are used.
 import { createServer } from 'node:http';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rename } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { createRequire } from 'node:module';
 import path from 'node:path';
@@ -74,6 +74,15 @@ if (STILLS) {
   await writeFile(wavPath, Buffer.from(wav, 'base64'));
   console.log('audio peak', peak.toFixed(3));
 
+  if (process.argv.includes('--remux')) {
+    // keep the rendered frames, replace only the soundtrack
+    const tmp = OUT.replace(/\.mp4$/, '.tmp.mp4');
+    await run(FFMPEG, ['-y', '-loglevel', 'error', '-i', OUT, '-i', wavPath, '-map', '0:v', '-map', '1:a',
+      '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', tmp]);
+    await rename(tmp, OUT);
+    console.log('remuxed audio into', OUT);
+    await browser.close(); server.close(); process.exit(0);
+  }
   const total = Math.round(15 * FPS);
   await run(FFMPEG, ['-y', '-loglevel', 'error',
     '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-',
