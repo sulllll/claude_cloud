@@ -1,17 +1,65 @@
 {
-  "collected_at": "2026-10-04 02:11",
+  "collected_at": "2026-10-04 06:06",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "croatia vs england",
+      "keyword": "송혜교",
       "traffic": "500+",
-      "news_title": "Croatia vs England: UEFA Nations League stats & head-to-head",
+      "news_title": "송혜교, 13살 어린 피아니스트 허리 감쌌다…동안 미모 이 정도였나",
+      "news_url": "https://v.daum.net/v/20261003040159630",
+      "search_url": "https://www.google.com/search?q=%EC%86%A1%ED%98%9C%EA%B5%90"
+    },
+    {
+      "rank": 2,
+      "keyword": "브레이브스 대 다저스",
+      "traffic": "2000+",
+      "news_title": "다저스, NLDS 1차전 선발투수는 '우승 청부사' 스쿠벌",
+      "news_url": "https://v.daum.net/v/B7MMSucntr?f=p",
+      "search_url": "https://www.google.com/search?q=%EB%B8%8C%EB%A0%88%EC%9D%B4%EB%B8%8C%EC%8A%A4%20%EB%8C%80%20%EB%8B%A4%EC%A0%80%EC%8A%A4"
+    },
+    {
+      "rank": 3,
+      "keyword": "장윤주",
+      "traffic": "500+",
+      "news_title": "장윤주, 3년 고민 끝 한국 떠났다…\"더 이상 꿈 안 꿔, 모델도 자신 없어\"",
+      "news_url": "https://v.daum.net/v/20261003215359611",
+      "search_url": "https://www.google.com/search?q=%EC%9E%A5%EC%9C%A4%EC%A3%BC"
+    },
+    {
+      "rank": 4,
+      "keyword": "조세호",
+      "traffic": "500+",
+      "news_title": "아직도 자숙 중인 조세호…살 너무 많이 쪘네",
+      "news_url": "https://www.segye.com/newsView/20261003503373",
+      "search_url": "https://www.google.com/search?q=%EC%A1%B0%EC%84%B8%ED%98%B8"
+    },
+    {
+      "rank": 5,
+      "keyword": "spain vs czechia",
+      "traffic": "500+",
+      "news_title": "Czech Republic midfielder warns of Lamine Yamal danger ahead of Nations League showdown",
+      "news_url": "https://barcauniversal.com/czech-republic-midfielder-warns-of-lamine-yamal-danger-ahead-of-nations-league-showdown/",
+      "search_url": "https://www.google.com/search?q=spain%20vs%20czechia"
+    },
+    {
+      "rank": 6,
+      "keyword": "기안84",
+      "traffic": "500+",
+      "news_title": "기안84, 이번엔 톰 크루즈 만났다…이시언도 “형님 저녁 시간 되신대?”",
+      "news_url": "https://v.daum.net/v/20261003174513402",
+      "search_url": "https://www.google.com/search?q=%EA%B8%B0%EC%95%8884"
+    },
+    {
+      "rank": 7,
+      "keyword": "croatia vs england",
+      "traffic": "1000+",
+      "news_title": "Croatia 0-7 England: Harry Kane and Bukayo Saka both score twice in Nations League win",
       "news_url": "https://www.bbc.com/sport/football/live/cm046w9zdkrwt",
       "search_url": "https://www.google.com/search?q=croatia%20vs%20england"
     },
     {
-      "rank": 2,
+      "rank": 8,
       "keyword": "크로아티아 대 잉글랜드",
       "traffic": "5000+",
       "news_title": "`쏘니 나 기록 도전해`…`골골골골골골골` 케인, 잉글랜드 역대 네 번째 원정 6경기 연속골 도전",
@@ -19,7 +67,7 @@
       "search_url": "https://www.google.com/search?q=%ED%81%AC%EB%A1%9C%EC%95%84%ED%8B%B0%EC%95%84%20%EB%8C%80%20%EC%9E%89%EA%B8%80%EB%9E%9C%EB%93%9C"
     },
     {
-      "rank": 3,
+      "rank": 9,
       "keyword": "인도 대 브라질",
       "traffic": "5000+",
       "news_title": "India vs Brazil: Friendlies stats & head-to-head",
@@ -27,60 +75,12 @@
       "search_url": "https://www.google.com/search?q=%EC%9D%B8%EB%8F%84%20%EB%8C%80%20%EB%B8%8C%EB%9D%BC%EC%A7%88"
     },
     {
-      "rank": 4,
-      "keyword": "금융위기",
-      "traffic": "200+",
-      "news_title": "\"집 보러 오는 사람 없다\"…美 주담대 7.28%, 세계 경제에도 부담",
-      "news_url": "https://www.chosun.com/economy/int_economy/2026/10/02/HMTGJIKNRRH45FYXLFXDRIQ33A/",
-      "search_url": "https://www.google.com/search?q=%EA%B8%88%EC%9C%B5%EC%9C%84%EA%B8%B0"
-    },
-    {
-      "rank": 5,
-      "keyword": "박서진",
-      "traffic": "5000+",
-      "news_title": "'살림남' 박서진, 본선 직전 초비상...박효정에 \"너 필요없어\" 분노",
-      "news_url": "https://v.daum.net/v/20261003110631208",
-      "search_url": "https://www.google.com/search?q=%EB%B0%95%EC%84%9C%EC%A7%84"
-    },
-    {
-      "rank": 6,
-      "keyword": "내일 날씨",
-      "traffic": "200000+",
-      "news_title": "내일 밤부터 전국 곳곳에 비…연휴 마지막 날엔 강풍 분다",
-      "news_url": "https://v.daum.net/v/p3ppxDqFyo",
-      "search_url": "https://www.google.com/search?q=%EB%82%B4%EC%9D%BC%20%EB%82%A0%EC%94%A8"
-    },
-    {
-      "rank": 7,
-      "keyword": "weather tomorrow",
-      "traffic": "2000+",
-      "news_title": "Monsoon withdrawal advances Saturday: Rain expected in south, northeast",
-      "news_url": "https://www.indiatoday.in/science/story/monsoon-retreat-india-october-weather-forecast-rain-storms-keralam-tamil-nadu-3008153-2026-10-02",
-      "search_url": "https://www.google.com/search?q=weather%20tomorrow"
-    },
-    {
-      "rank": 8,
-      "keyword": "이주승",
-      "traffic": "200+",
-      "news_title": "김신영, ‘밥 소믈리에’ 도전한다",
-      "news_url": "https://www.segye.com/newsView/20261003502451",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B4%EC%A3%BC%EC%8A%B9"
-    },
-    {
-      "rank": 9,
-      "keyword": "mbc",
-      "traffic": "200+",
-      "news_title": "Swift Current, Sask., man charged with sexual assault as RCMP look for more victims",
-      "news_url": "https://www.cbc.ca/news/canada/saskatoon/swift-current-rcmp-sexual-assault-snapchat-girls-aniken-edwards-9.7367734",
-      "search_url": "https://www.google.com/search?q=mbc"
-    },
-    {
       "rank": 10,
-      "keyword": "유재석",
-      "traffic": "1000+",
-      "news_title": "유재석, 명절에 한우 100여명 보낸다더니 \"주소 취합해 우체국 가서 붙이면 돼\" (핑계고)",
-      "news_url": "https://v.daum.net/v/20261003151513225",
-      "search_url": "https://www.google.com/search?q=%EC%9C%A0%EC%9E%AC%EC%84%9D"
+      "keyword": "엘레나 리바키나",
+      "traffic": "500+",
+      "news_title": "세계 1위로서 처음 대회 나선 리바키나. \"세계 1위의 마음가짐은 어때야 하나요?\" 질문에 \"No idea\"",
+      "news_url": "https://www.tennis.co.kr/news/articleView.html?idxno=53931",
+      "search_url": "https://www.google.com/search?q=%EC%97%98%EB%A0%88%EB%82%98%20%EB%A6%AC%EB%B0%94%ED%82%A4%EB%82%98"
     }
   ]
 }
