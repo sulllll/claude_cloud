@@ -1,25 +1,73 @@
 {
-  "collected_at": "2026-10-05 02:26",
+  "collected_at": "2026-10-05 06:16",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "김혜자",
-      "traffic": "200+",
-      "news_title": "85세 김혜자, 65년 연기와 35년 나눔…‘죽지 마세요’에 담았다",
-      "news_url": "https://www.donga.com/news/article/all/20261001/134765833/2?gid=134773457&srev=2&regdate=20261002",
-      "search_url": "https://www.google.com/search?q=%EA%B9%80%ED%98%9C%EC%9E%90"
+      "keyword": "신지애",
+      "traffic": "100+",
+      "news_title": "신지애, 일본여자오픈골프 우승…30승·커리어 그랜드 슬램 달성",
+      "news_url": "https://v.daum.net/v/20261004200148290",
+      "search_url": "https://www.google.com/search?q=%EC%8B%A0%EC%A7%80%EC%95%A0"
     },
     {
       "rank": 2,
-      "keyword": "이희진",
-      "traffic": "200+",
-      "news_title": "“이희진과 100일” 임원희, 과감한 스킨십→마음 고백 (미우새)",
-      "news_url": "https://v.daum.net/v/20261004090143095",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B4%ED%9D%AC%EC%A7%84"
+      "keyword": "로스앤젤레스 다저스",
+      "traffic": "2000+",
+      "news_title": "스쿠벌 6이닝 1실점 다저스, NLDS 기선 제압…김하성 1볼넷",
+      "news_url": "https://www.yna.co.kr/view/AKR20261004006800007",
+      "search_url": "https://www.google.com/search?q=%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20%EB%8B%A4%EC%A0%80%EC%8A%A4"
     },
     {
       "rank": 3,
+      "keyword": "bồ đào nha đấu với na uy",
+      "traffic": "100+",
+      "news_title": "Trực tiếp bóng đá Bồ Đào Nha - Na Uy: Ramos đọ tài Haaland (Nations League)",
+      "news_url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-bo-dao-nha-na-uy-no-chong-them-no-nations-league-c48a1800021.html",
+      "search_url": "https://www.google.com/search?q=b%E1%BB%93%20%C4%91%C3%A0o%20nha%20%C4%91%E1%BA%A5u%20v%E1%BB%9Bi%20na%20uy"
+    },
+    {
+      "rank": 4,
+      "keyword": "국민연금공단",
+      "traffic": "100+",
+      "news_title": "국민연금, 코스닥 투자 100조 넘어…다른 공적연금은 '미미'",
+      "news_url": "https://v.daum.net/v/20261004060732402",
+      "search_url": "https://www.google.com/search?q=%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88%EA%B3%B5%EB%8B%A8"
+    },
+    {
+      "rank": 5,
+      "keyword": "엔비디아 테슬라",
+      "traffic": "200+",
+      "news_title": "\"엔비디아·테슬라 다 팔았다\"…부자들 새로 베팅한 종목",
+      "news_url": "https://www.hankyung.com/article/2026100426701",
+      "search_url": "https://www.google.com/search?q=%EC%97%94%EB%B9%84%EB%94%94%EC%95%84%20%ED%85%8C%EC%8A%AC%EB%9D%BC"
+    },
+    {
+      "rank": 6,
+      "keyword": "portugal vs norway",
+      "traffic": "500+",
+      "news_title": "Ronaldo-less Portugal beat Norway to reach Nations League quarters",
+      "news_url": "https://www.rfi.fr/en/sports/20261004-ronaldo-less-portugal-beat-norway-to-reach-nations-league-quarters",
+      "search_url": "https://www.google.com/search?q=portugal%20vs%20norway"
+    },
+    {
+      "rank": 7,
+      "keyword": "김혜자",
+      "traffic": "200+",
+      "news_title": "다큐 '김혜자의 안부' 김혜자 나이 85세 삶 조명",
+      "news_url": "https://v.daum.net/v/20261004231113767",
+      "search_url": "https://www.google.com/search?q=%EA%B9%80%ED%98%9C%EC%9E%90"
+    },
+    {
+      "rank": 8,
+      "keyword": "이희진",
+      "traffic": "200+",
+      "news_title": "'미우새' 임원희, 이희진과 100일 기념 데이트…드디어 고백",
+      "news_url": "https://v.daum.net/v/20261004155345510?f=p",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B4%ED%9D%AC%EC%A7%84"
+    },
+    {
+      "rank": 9,
       "keyword": "김희애",
       "traffic": "2000+",
       "news_title": "‘물광 아이콘’ 김희애, 세월의 흔적에 누리꾼 “주름도 우아해”",
@@ -27,60 +75,12 @@
       "search_url": "https://www.google.com/search?q=%EA%B9%80%ED%9D%AC%EC%95%A0"
     },
     {
-      "rank": 4,
-      "keyword": "넷플릭스",
-      "traffic": "20000+",
-      "news_title": "'화제성 88.3% 급상승→넷플릭스 1위'…글로벌 인기 쌍끌이 중인 韓 예능 ('기안장2')",
-      "news_url": "https://v.daum.net/v/20261004180052410",
-      "search_url": "https://www.google.com/search?q=%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4"
-    },
-    {
-      "rank": 5,
-      "keyword": "정년",
-      "traffic": "5000+",
-      "news_title": "[단독] ‘소득공백’ 정년퇴직 공무원, 3년새 2배↑",
-      "news_url": "https://www.segye.com/newsView/20261004506958",
-      "search_url": "https://www.google.com/search?q=%EC%A0%95%EB%85%84"
-    },
-    {
-      "rank": 6,
-      "keyword": "과즙세연",
-      "traffic": "2000+",
-      "news_title": "'마약 혐의' 과즙세연, 하루 만에 돈방석 앉았다..엑셀 방송 '1억' 잭팟 [Oh!쎈 이슈]",
-      "news_url": "https://www.koreadaily.com/article/20261003164540798",
-      "search_url": "https://www.google.com/search?q=%EA%B3%BC%EC%A6%99%EC%84%B8%EC%97%B0"
-    },
-    {
-      "rank": 7,
-      "keyword": "기능사",
-      "traffic": "2000+",
-      "news_title": "“돈 되는 자격증 이것뿐” 前트럭기사가 찾은 ‘월 400 직장’",
-      "news_url": "https://v.daum.net/v/Kt4GQZgRvM",
-      "search_url": "https://www.google.com/search?q=%EA%B8%B0%EB%8A%A5%EC%82%AC"
-    },
-    {
-      "rank": 8,
-      "keyword": "허미미",
-      "traffic": "1000+",
-      "news_title": "할머니가 이어준 태극마크…허미미 재일동포 할머니들과 “대한민국”",
-      "news_url": "https://news.kbs.co.kr/news/view.do?ncd=8677430",
-      "search_url": "https://www.google.com/search?q=%ED%97%88%EB%AF%B8%EB%AF%B8"
-    },
-    {
-      "rank": 9,
-      "keyword": "thời tiết ngày mai",
-      "traffic": "1000+",
-      "news_title": "Dự báo gió mạnh, sóng lớn và mưa dông trên biển trong ngày và đêm 5/10",
-      "news_url": "https://htv.vn/du-bao-gio-manh-song-lon-va-mua-dong-tren-bien-trong-ngay-va-dem-5-10-22226100410511709.htm",
-      "search_url": "https://www.google.com/search?q=th%E1%BB%9Di%20ti%E1%BA%BFt%20ng%C3%A0y%20mai"
-    },
-    {
       "rank": 10,
-      "keyword": "내일 날씨",
-      "traffic": "100000+",
-      "news_title": "[날씨] 연휴 마지막 날 오전까지 전국 비…돌풍·우박 가능성",
-      "news_url": "https://www.yonhapnewstv.co.kr/news/MYH20261004194704Sna",
-      "search_url": "https://www.google.com/search?q=%EB%82%B4%EC%9D%BC%20%EB%82%A0%EC%94%A8"
+      "keyword": "넷플릭스",
+      "traffic": "10000+",
+      "news_title": "10월 가을 분위기 제대로 '넷플릭스' 영화 5",
+      "news_url": "https://www.esquirekorea.co.kr/article/1910915",
+      "search_url": "https://www.google.com/search?q=%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4"
     }
   ]
 }
