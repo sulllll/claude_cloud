@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-06 07:32",
+  "collected_at": "2026-10-06 11:53",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "나스닥 100",
-      "traffic": "200+",
-      "news_title": "Stock Market Today: Indexes Mixed at Opening Bell as Treasury Yields Rise, Oil Prices Fall",
-      "news_url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-indexes-mixed-105248918.html",
-      "search_url": "https://www.google.com/search?q=%EB%82%98%EC%8A%A4%EB%8B%A5%20100"
+      "keyword": "성현주",
+      "traffic": "2000+",
+      "news_title": "성현주, 먼저 떠난 8살 아들…\"1000일 동안 의식 없었다\"",
+      "news_url": "https://www.newsis.com/view/NISX20261005_0003814645",
+      "search_url": "https://www.google.com/search?q=%EC%84%B1%ED%98%84%EC%A3%BC"
     },
     {
       "rank": 2,
-      "keyword": "spcx",
-      "traffic": "200+",
-      "news_title": "SpaceX Wins Starship Gamble, Despite DNA Clash With NASA",
-      "news_url": "https://en.sedaily.com/finance/2026/10/03/spacex-wins-starship-gamble-as-nasa-clash-deepens",
-      "search_url": "https://www.google.com/search?q=spcx"
+      "keyword": "우리은행",
+      "traffic": "1000+",
+      "news_title": "우리은행 런던트레이딩센터, 현지 기업과 첫 파생상품 거래",
+      "news_url": "https://www.yna.co.kr/view/AKR20261004021100002",
+      "search_url": "https://www.google.com/search?q=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89"
     },
     {
       "rank": 3,
-      "keyword": "광고",
-      "traffic": "100+",
-      "news_title": "건당 200원 받고 부동산 광고 올린 청년들 檢송치",
-      "news_url": "https://www.donga.com/news/Society/article/all/20261005/134789322/2",
-      "search_url": "https://www.google.com/search?q=%EA%B4%91%EA%B3%A0"
+      "keyword": "하나은행",
+      "traffic": "500+",
+      "news_title": "서울 달빛야장 소상공인에 687억 특별보증",
+      "news_url": "https://www.donga.com/news/Society/article/all/20261005/134789320/2",
+      "search_url": "https://www.google.com/search?q=%ED%95%98%EB%82%98%EC%9D%80%ED%96%89"
     },
     {
       "rank": 4,
-      "keyword": "lg전자",
-      "traffic": "1000+",
-      "news_title": "LG전자, 북미 AI 데이터센터 냉각시장서 대형 계약 수주",
-      "news_url": "https://v.daum.net/v/20261005230914907",
-      "search_url": "https://www.google.com/search?q=lg%EC%A0%84%EC%9E%90"
+      "keyword": "클로드",
+      "traffic": "10000+",
+      "news_title": "클로드 이어 챗GPT도 텍스트 워터마크 적용…EU지역 우선 적용",
+      "news_url": "https://v.daum.net/v/20261006050146626",
+      "search_url": "https://www.google.com/search?q=%ED%81%B4%EB%A1%9C%EB%93%9C"
     },
     {
       "rank": 5,
-      "keyword": "s&p 500",
-      "traffic": "1000+",
-      "news_title": "Nasdaq closes at fresh record as tech shares rise and traders look past higher yields",
-      "news_url": "https://www.cnbc.com/2026/10/04/stock-market-today-live-updates.html",
-      "search_url": "https://www.google.com/search?q=s%26p%20500"
+      "keyword": "조세",
+      "traffic": "2000+",
+      "news_title": "",
+      "news_url": "",
+      "search_url": "https://www.google.com/search?q=%EC%A1%B0%EC%84%B8"
     },
     {
       "rank": 6,
-      "keyword": "나스닥 지수",
-      "traffic": "500+",
-      "news_title": "뉴욕증시, 상승세로 마감…나스닥 1.05%↑",
-      "news_url": "https://bloomingbit.io/feed/news/121641",
-      "search_url": "https://www.google.com/search?q=%EB%82%98%EC%8A%A4%EB%8B%A5%20%EC%A7%80%EC%88%98"
+      "keyword": "엔화",
+      "traffic": "1000+",
+      "news_title": "토스뱅크 엔화 환전 사고, '오류냐 아니냐'…금융당국 법리 검토 - 머니투데이",
+      "news_url": "https://www.mt.co.kr/finance/2026/10/04/2026092915563875663",
+      "search_url": "https://www.google.com/search?q=%EC%97%94%ED%99%94"
     },
     {
       "rank": 7,
-      "keyword": "연합뉴스",
-      "traffic": "500+",
-      "news_title": "서초구, 고향사랑기부 답례품에 '디지털 콘텐츠' 첫선",
-      "news_url": "https://www.yna.co.kr/view/AKR20261006011700004",
-      "search_url": "https://www.google.com/search?q=%EC%97%B0%ED%95%A9%EB%89%B4%EC%8A%A4"
+      "keyword": "1박 2일",
+      "traffic": "200+",
+      "news_title": "'1박2일' 문세윤 거짓말 논란 일파만파..KBS 출연 정지·하차 요구 빗발 '웃음'",
+      "news_url": "https://v.daum.net/v/WhgPNn3GTN",
+      "search_url": "https://www.google.com/search?q=1%EB%B0%95%202%EC%9D%BC"
     },
     {
       "rank": 8,
-      "keyword": "이재용",
-      "traffic": "200+",
-      "news_title": "사진 속 한미 해군 사령관 뒤 젊은 통역장교…이재용 장남 이지호",
-      "news_url": "https://v.daum.net/v/yxdBCucn32",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B4%EC%9E%AC%EC%9A%A9"
+      "keyword": "이자",
+      "traffic": "5000+",
+      "news_title": "은행보다 1~2%P 높다…‘5% 이자’ 증권사 특판 러시",
+      "news_url": "https://v.daum.net/v/F9DQIau5vx",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B4%EC%9E%90"
     },
     {
       "rank": 9,
-      "keyword": "아동수당",
-      "traffic": "100+",
-      "news_title": "이 대통령 \"복지급여, 신청하지 않아도 국가가 먼저 챙긴다\"",
-      "news_url": "https://v.daum.net/v/VSQrXdHlgK?f=p",
-      "search_url": "https://www.google.com/search?q=%EC%95%84%EB%8F%99%EC%88%98%EB%8B%B9"
+      "keyword": "송강",
+      "traffic": "500+",
+      "news_title": "송강 옆에서 '쩍벌'한 태국 배우…\"미안해, 다음엔 내 다리 쳐도 돼\"",
+      "news_url": "https://v.daum.net/v/20261006022611075",
+      "search_url": "https://www.google.com/search?q=%EC%86%A1%EA%B0%95"
     },
     {
       "rank": 10,
-      "keyword": "동아일보",
-      "traffic": "200+",
-      "news_title": "두 종류의 ‘3만원’과 ‘1000만원’",
-      "news_url": "https://v.daum.net/v/20261005180820324",
-      "search_url": "https://www.google.com/search?q=%EB%8F%99%EC%95%84%EC%9D%BC%EB%B3%B4"
+      "keyword": "유승민",
+      "traffic": "100+",
+      "news_title": "유승민 “162조 미래대응기금으로 현금 살포…반도체에서 번 돈으로 선거용 매표행위”",
+      "news_url": "https://v.daum.net/v/20261005120645326?f=p",
+      "search_url": "https://www.google.com/search?q=%EC%9C%A0%EC%8A%B9%EB%AF%BC"
     }
   ]
 }
