@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-07 10:25",
+  "collected_at": "2026-10-07 17:32",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "구글 플레이",
-      "traffic": "100+",
-      "news_title": "Google fights £1 billion UK lawsuit over app store fees in latest Big Tech case",
-      "news_url": "https://www.reuters.com/business/retail-consumer/google-fights-1-billion-uk-lawsuit-over-app-store-fees-latest-big-tech-case-2026-10-06/",
-      "search_url": "https://www.google.com/search?q=%EA%B5%AC%EA%B8%80%20%ED%94%8C%EB%A0%88%EC%9D%B4"
+      "keyword": "눈 수술",
+      "traffic": "200+",
+      "news_title": "\"2살 딸이 눈 수술 받으러 갔다가 중환자실에\"…울산 안과병원서 마취 중 심정지, 경찰 수사",
+      "news_url": "https://news.jtbc.co.kr/article/NB12321759",
+      "search_url": "https://www.google.com/search?q=%EB%88%88%20%EC%88%98%EC%88%A0"
     },
     {
       "rank": 2,
-      "keyword": "기상청 날씨누리",
-      "traffic": "500+",
-      "news_title": "제자리 찾은 가을… 올해는 ‘지각 단풍’ 없다",
-      "news_url": "https://www.chosun.com/national/transport-environment/2026/10/07/G5YB7WAQSRD6RJ2XU5NBCU563Y/",
-      "search_url": "https://www.google.com/search?q=%EA%B8%B0%EC%83%81%EC%B2%AD%20%EB%82%A0%EC%94%A8%EB%88%84%EB%A6%AC"
+      "keyword": "인권 단체",
+      "traffic": "200+",
+      "news_title": "[단독] 이재명 통일부, 北인권단체 지원 끊었다 … 지난해 23곳 16억9300만 원→올해 0원",
+      "news_url": "https://www.newdaily.co.kr/site/data/html/2026/10/07/2026100700069.html",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B8%EA%B6%8C%20%EB%8B%A8%EC%B2%B4"
     },
     {
       "rank": 3,
-      "keyword": "엘리스그룹",
-      "traffic": "100+",
-      "news_title": "엘리스그룹, '1조 몸값' 코스닥 도전…글로벌 네오클라우드 노린다",
-      "news_url": "https://zdnet.co.kr/view/?no=20260930123837",
-      "search_url": "https://www.google.com/search?q=%EC%97%98%EB%A6%AC%EC%8A%A4%EA%B7%B8%EB%A3%B9"
+      "keyword": "주가",
+      "traffic": "2000+",
+      "news_title": "[단독]\"7000원에 샀는데 1600원이라니\"…대박 꿈꿨다가 주가 76% '와르르'[코스닥 뻥튀기 상장]②",
+      "news_url": "https://v.daum.net/v/f35rNkb0jj",
+      "search_url": "https://www.google.com/search?q=%EC%A3%BC%EA%B0%80"
     },
     {
       "rank": 4,
-      "keyword": "김혜자",
-      "traffic": "2000+",
-      "news_title": "85세 김혜자, 부축·기침...걱정스러운 레드카펫 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/entertainment/2026/10/07/2026100708112250424",
-      "search_url": "https://www.google.com/search?q=%EA%B9%80%ED%98%9C%EC%9E%90"
+      "keyword": "폴더블 스마트폰",
+      "traffic": "1000+",
+      "news_title": "고윤정, 광고모델도 아닌데 갈아탔다…손에 든 '이것' 뭐길래 [테크로그]",
+      "news_url": "https://www.hankyung.com/article/202610078190g",
+      "search_url": "https://www.google.com/search?q=%ED%8F%B4%EB%8D%94%EB%B8%94%20%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0"
     },
     {
       "rank": 5,
-      "keyword": "논쟁",
-      "traffic": "1000+",
-      "news_title": "\"군대 안 간다\" '삐딱' 전역모‥병역특례 개선안 초읽기",
-      "news_url": "https://imnews.imbc.com/replay/2026/nw2500/article/6856159_36989.html",
-      "search_url": "https://www.google.com/search?q=%EB%85%BC%EC%9F%81"
+      "keyword": "수도권전철",
+      "traffic": "200+",
+      "news_title": "태그 한 번에 수도권 전철 무료 이용…충북 시니어패스 출시",
+      "news_url": "https://v.daum.net/v/20261007112811634",
+      "search_url": "https://www.google.com/search?q=%EC%88%98%EB%8F%84%EA%B6%8C%EC%A0%84%EC%B2%A0"
     },
     {
       "rank": 6,
-      "keyword": "부산은행",
+      "keyword": "역사 왜곡",
       "traffic": "200+",
-      "news_title": "BNK부산은행, 신보와 지역 문화콘텐츠기업에 100억원 보증 지원",
-      "news_url": "https://v.daum.net/v/20261006150314659",
-      "search_url": "https://www.google.com/search?q=%EB%B6%80%EC%82%B0%EC%9D%80%ED%96%89"
+      "news_title": "최교진, 암살자(들) 단체관람에 \"교육부가 일일이 간섭하긴 한계\"(종합)",
+      "news_url": "https://v.daum.net/v/20261007153847703",
+      "search_url": "https://www.google.com/search?q=%EC%97%AD%EC%82%AC%20%EC%99%9C%EA%B3%A1"
     },
     {
       "rank": 7,
-      "keyword": "키움증권",
-      "traffic": "100+",
-      "news_title": "키움증권, 연말 절세 시즌 맞이 중개형 ISA 이벤트 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/stock/2026/10/07/2026100709054862495",
-      "search_url": "https://www.google.com/search?q=%ED%82%A4%EC%9B%80%EC%A6%9D%EA%B6%8C"
+      "keyword": "줍줍",
+      "traffic": "200+",
+      "news_title": "'10억 로또' 강변역 아이파크 '줍줍' 1가구에 6.7만명 몰렸다",
+      "news_url": "https://www.news1.kr/realestate/general/6312054",
+      "search_url": "https://www.google.com/search?q=%EC%A4%8D%EC%A4%8D"
     },
     {
       "rank": 8,
-      "keyword": "백종원",
+      "keyword": "쓰레기 봉투",
       "traffic": "1000+",
-      "news_title": "입만 열면 말실수하는 스타, 백종원·전현무…1위 누구? - 머니투데이",
-      "news_url": "https://www.mt.co.kr/society/2026/10/07/2026100709205152400",
-      "search_url": "https://www.google.com/search?q=%EB%B0%B1%EC%A2%85%EC%9B%90"
+      "news_title": "“미화원 허리 나갈 듯“…테이프로 칭칭 묶은 ’3단 쓰레기봉투’",
+      "news_url": "https://www.yonhapnewstv.co.kr/news/AKR20261006112529CEY",
+      "search_url": "https://www.google.com/search?q=%EC%93%B0%EB%A0%88%EA%B8%B0%20%EB%B4%89%ED%88%AC"
     },
     {
       "rank": 9,
-      "keyword": "미래에셋증권",
-      "traffic": "200+",
-      "news_title": "\"미래에셋증권, 스페이스X 평가손실로 3분기 적자전환 불가피\"",
-      "news_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4438011",
-      "search_url": "https://www.google.com/search?q=%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8B%EC%A6%9D%EA%B6%8C"
+      "keyword": "윤석열 무죄",
+      "traffic": "5000+",
+      "news_title": "김건희 이어 윤석열도 무죄…‘명태균 여론조사’ 1심 징역 2년 뒤집혀",
+      "news_url": "https://v.daum.net/v/20261007145012507",
+      "search_url": "https://www.google.com/search?q=%EC%9C%A4%EC%84%9D%EC%97%B4%20%EB%AC%B4%EC%A3%84"
     },
     {
       "rank": 10,
-      "keyword": "롤 패치 노트",
-      "traffic": "500+",
-      "news_title": "리그 오브 레전드 26.20 패치 노트",
-      "news_url": "https://www.leagueoflegends.com/ko-kr/news/game-updates/league-of-legends-patch-26-20-notes/",
-      "search_url": "https://www.google.com/search?q=%EB%A1%A4%20%ED%8C%A8%EC%B9%98%20%EB%85%B8%ED%8A%B8"
+      "keyword": "대한민국 국세청",
+      "traffic": "2000+",
+      "news_title": "'선박왕' 권혁 회장, 15년 만에 '체납액' 4천억 원 완납하기로",
+      "news_url": "https://imnews.imbc.com/news/2026/society/article/6856293_36918.html",
+      "search_url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B5%AD%EC%84%B8%EC%B2%AD"
     }
   ]
 }
