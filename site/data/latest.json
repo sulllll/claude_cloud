@@ -1,9 +1,65 @@
 {
-  "collected_at": "2026-10-12 00:34",
+  "collected_at": "2026-10-12 05:10",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
+      "keyword": "김지원",
+      "traffic": "1000+",
+      "news_title": "'닥터X' 김지원, 신드롬 시작...2회 14.9%로 土시청률 전체 1위 [종합] - 머니투데이",
+      "news_url": "https://www.mt.co.kr/entertainment/2026/10/11/2026101108147218523",
+      "search_url": "https://www.google.com/search?q=%EA%B9%80%EC%A7%80%EC%9B%90"
+    },
+    {
+      "rank": 2,
+      "keyword": "황희찬",
+      "traffic": "1000+",
+      "news_title": "‘96 라인’ 3인방, 진짜 원하는 게 무엇인가? 대표팀 은퇴로 원하는 바를 흥정했다면 큰 오산이다…‘태극마크’는 결코 흥정, 거래의 대상이 될 수 없다",
+      "news_url": "https://www.segye.com/newsView/20261009502745",
+      "search_url": "https://www.google.com/search?q=%ED%99%A9%ED%9D%AC%EC%B0%AC"
+    },
+    {
+      "rank": 3,
+      "keyword": "ลิเวอร์พูล พบ แมนซิตี",
+      "traffic": "200+",
+      "news_title": "ถ่ายทอดสดฟุตบอล: ลิเวอร์พูล พบ แมนฯ ซิตี้: พรีเมียร์ลีก รอบที่ 6",
+      "news_url": "https://www.vietnam.vn/th/truc-tiep-bong-da-liverpool-vs-man-city-vong-6-ngoai-hang-anh",
+      "search_url": "https://www.google.com/search?q=%E0%B8%A5%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%B9%E0%B8%A5%20%E0%B8%9E%E0%B8%9A%20%E0%B9%81%E0%B8%A1%E0%B8%99%E0%B8%8B%E0%B8%B4%E0%B8%95%E0%B8%B5"
+    },
+    {
+      "rank": 4,
+      "keyword": "liverpool đấu với man city",
+      "traffic": "200+",
+      "news_title": "Video bóng đá Liverpool - Man City: Tội đồ Gravenberch mở ra thảm bại (Ngoại hạng Anh)",
+      "news_url": "https://www.24h.com.vn/bong-da/video-bong-da-liverpool-man-city-toi-do-gravenberch-mo-ra-tham-bai-ngoai-hang-anh-c48a1801935.html",
+      "search_url": "https://www.google.com/search?q=liverpool%20%C4%91%E1%BA%A5u%20v%E1%BB%9Bi%20man%20city"
+    },
+    {
+      "rank": 5,
+      "keyword": "fotmob",
+      "traffic": "200+",
+      "news_title": "'Not a football country!' - Olivier Giroud slams MLS after abrupt LAFC exit",
+      "news_url": "https://sports.yahoo.com/articles/not-football-country-olivier-giroud-101156408.html",
+      "search_url": "https://www.google.com/search?q=fotmob"
+    },
+    {
+      "rank": 6,
+      "keyword": "김성한",
+      "traffic": "500+",
+      "news_title": "차에서 내린 취객이 ‘빠직’···또 파손된 김성한 전 해태 타이거즈 선수 조형물, 이번엔 발목만 남았다",
+      "news_url": "https://www.khan.co.kr/article/202610111919001",
+      "search_url": "https://www.google.com/search?q=%EA%B9%80%EC%84%B1%ED%95%9C"
+    },
+    {
+      "rank": 7,
+      "keyword": "liverpool vs man city",
+      "traffic": "1000+",
+      "news_title": "Man City cruise to statement win over 10-man Liverpool",
+      "news_url": "https://www.bbc.com/sport/football/live/cr3el8xwnnxkt",
+      "search_url": "https://www.google.com/search?q=liverpool%20vs%20man%20city"
+    },
+    {
+      "rank": 8,
       "keyword": "청년",
       "traffic": "5000+",
       "news_title": "정부는 안정적인 계란 공급을 위해 신선란 수입선을 다변화해 왔습니다.",
@@ -11,7 +67,7 @@
       "search_url": "https://www.google.com/search?q=%EC%B2%AD%EB%85%84"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "keyword": "레알 소시에다드 대 데포르티보",
       "traffic": "500+",
       "news_title": "레알 소시에다드 대 데포르티보 라 코루나 예측: 방문객들은 하락세를 멈추기로 결정했습니다.",
@@ -19,68 +75,12 @@
       "search_url": "https://www.google.com/search?q=%EB%A0%88%EC%95%8C%20%EC%86%8C%EC%8B%9C%EC%97%90%EB%8B%A4%EB%93%9C%20%EB%8C%80%20%EB%8D%B0%ED%8F%AC%EB%A5%B4%ED%8B%B0%EB%B3%B4"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "keyword": "india vs west indies",
       "traffic": "500+",
       "news_title": "India and West Indies head to Indore for potential run-fest with series level",
       "news_url": "https://www.cricinfo.com/series/west-indies-in-india-2026-27-1529215/india-vs-west-indies-3rd-t20i-1529232/match-preview",
       "search_url": "https://www.google.com/search?q=india%20vs%20west%20indies"
-    },
-    {
-      "rank": 4,
-      "keyword": "f1",
-      "traffic": "1000+",
-      "news_title": "Verstappen seals commanding Singapore victory",
-      "news_url": "https://www.formula1.com/en/latest/article/verstappen-seals-commanding-singapore-grand-prix-victory-from-leclerc-and-antonelli.49wDzysiVqi5cloGjle40A",
-      "search_url": "https://www.google.com/search?q=f1"
-    },
-    {
-      "rank": 5,
-      "keyword": "리버풀 맨시티",
-      "traffic": "1000+",
-      "news_title": "이사크·각포 맨시티전 결장 확정…홀란 막을 리버풀의 선택은?",
-      "news_url": "https://www.topstarnews.net/news/articleView.html?idxno=16243025",
-      "search_url": "https://www.google.com/search?q=%EB%A6%AC%EB%B2%84%ED%92%80%20%EB%A7%A8%EC%8B%9C%ED%8B%B0"
-    },
-    {
-      "rank": 6,
-      "keyword": "표승주",
-      "traffic": "500+",
-      "news_title": "얼떨결에 받았는데…여자배구, 개막 첫 '행운의 득점'",
-      "news_url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008792074",
-      "search_url": "https://www.google.com/search?q=%ED%91%9C%EC%8A%B9%EC%A3%BC"
-    },
-    {
-      "rank": 7,
-      "keyword": "주주",
-      "traffic": "1000+",
-      "news_title": "\"1조달러 보상해달라\" 머스크 제안에…주주들 열광한 이유",
-      "news_url": "https://www.hankyung.com/article/2026101144751",
-      "search_url": "https://www.google.com/search?q=%EC%A3%BC%EC%A3%BC"
-    },
-    {
-      "rank": 8,
-      "keyword": "유현 조",
-      "traffic": "500+",
-      "news_title": "안지현 버디 11개 폭풍 추격에도 … 유현조, 1점 차 극적 승부로 통산 4승",
-      "news_url": "https://www.chosun.com/sports/golf/2026/10/11/KPB7B6PQTFFHVDZIG3CAWVAGO4/",
-      "search_url": "https://www.google.com/search?q=%EC%9C%A0%ED%98%84%20%EC%A1%B0"
-    },
-    {
-      "rank": 9,
-      "keyword": "persib bandung vs dewa united",
-      "traffic": "200+",
-      "news_title": "Klasemen Super League Pekan ke-4 usai Persib Vs Dewa United Imbang: Persija Tetap di Puncak!",
-      "news_url": "https://www.inilah.com/klasemen-super-league-pekan-ke-4-usai-persib-vs-dewa-united-persija-di-puncak",
-      "search_url": "https://www.google.com/search?q=persib%20bandung%20vs%20dewa%20united"
-    },
-    {
-      "rank": 10,
-      "keyword": "pak vs sl",
-      "traffic": "1000+",
-      "news_title": "PAK vs SL 2026/27, PAK vs SL 2nd T20I Match Preview - Sri Lanka hope to get out of T20I rut and keep series alive",
-      "news_url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-2nd-t20i-1550709/match-preview",
-      "search_url": "https://www.google.com/search?q=pak%20vs%20sl"
     }
   ]
 }
