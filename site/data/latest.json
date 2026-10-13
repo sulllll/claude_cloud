@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-13 09:32",
+  "collected_at": "2026-10-13 16:37",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "필리조선소",
-      "traffic": "500+",
-      "news_title": "한화 필리조선소, 수주난·고비용·적자에 7조 투자 사업성 의문",
-      "news_url": "https://www.chosun.com/international/international_general/2026/10/13/YJURP35N35BDTC7DS6RACJENVA/",
-      "search_url": "https://www.google.com/search?q=%ED%95%84%EB%A6%AC%EC%A1%B0%EC%84%A0%EC%86%8C"
+      "keyword": "대한민국 해군",
+      "traffic": "200+",
+      "news_title": "해군 함정 ‘대구함’ 함장·장병들, 8년 만에 대구 찾았다",
+      "news_url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4086749",
+      "search_url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%ED%95%B4%EA%B5%B0"
     },
     {
       "rank": 2,
-      "keyword": "덴마크 오픈",
-      "traffic": "200+",
-      "news_title": "'AG 2연패' 안세영, 다시 세계 무대로…덴마크·프랑스오픈 출격",
-      "news_url": "https://www.newsis.com/view/NISX20261012_0003821537",
-      "search_url": "https://www.google.com/search?q=%EB%8D%B4%EB%A7%88%ED%81%AC%20%EC%98%A4%ED%94%88"
+      "keyword": "cj제일제당",
+      "traffic": "100+",
+      "news_title": "CJ제일제당 ‘서울청년주간’서 친환경 자원순환 가치 공유 : Packnet",
+      "news_url": "https://packnet.co.kr/30/?idx=175074830&bmode=view",
+      "search_url": "https://www.google.com/search?q=cj%EC%A0%9C%EC%9D%BC%EC%A0%9C%EB%8B%B9"
     },
     {
       "rank": 3,
-      "keyword": "다저스",
-      "traffic": "500+",
-      "news_title": "밀워키 브루어스, 불펜 힘 앞세워 ‘수퍼팀’ 다저스 잡고 NLCS 선취승",
-      "news_url": "https://www.chosun.com/sports/world-baseball/2026/10/12/SQJW6WSYNVDJBAQTA7V75IWEUI/",
-      "search_url": "https://www.google.com/search?q=%EB%8B%A4%EC%A0%80%EC%8A%A4"
+      "keyword": "인천송도소방서",
+      "traffic": "100+",
+      "news_title": "송도소방서 물탱크차 운전 김소연·현지은·설아영, 6000ℓ 물 싣고 화재 현장 누비는 '3인방'",
+      "news_url": "https://www.incheonilbo.com/news/articleView.html?idxno=1333825",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B8%EC%B2%9C%EC%86%A1%EB%8F%84%EC%86%8C%EB%B0%A9%EC%84%9C"
     },
     {
       "rank": 4,
-      "keyword": "메타",
+      "keyword": "유지 원",
       "traffic": "2000+",
-      "news_title": "물 들어올 때 노 젓는 메타...‘뮤즈 탑재’ 새 고성능 AI 모델 발표",
-      "news_url": "https://www.chosun.com/economy/tech_it/2026/10/13/CR6XIZUFBZCQ3FXPOVG6PQ3DR4/",
-      "search_url": "https://www.google.com/search?q=%EB%A9%94%ED%83%80"
+      "news_title": "'서울 달리기' 마라톤대회 참가했던 20대 여성 사망",
+      "news_url": "https://www.yna.co.kr/view/AKR20261012173400004",
+      "search_url": "https://www.google.com/search?q=%EC%9C%A0%EC%A7%80%20%EC%9B%90"
     },
     {
       "rank": 5,
-      "keyword": "주영훈",
-      "traffic": "5000+",
-      "news_title": "청담동 150평 집 팔고 떠났다…작곡가 주영훈, 미국 화장실 청소부 된 어머니",
-      "news_url": "https://www.segye.com/newsView/20261002511122",
-      "search_url": "https://www.google.com/search?q=%EC%A3%BC%EC%98%81%ED%9B%88"
+      "keyword": "한국장학재단",
+      "traffic": "500+",
+      "news_title": "대학생 생활비 대출 ‘빚투’로 악용… 장학재단 관리 부실 지적[2026 국감]",
+      "news_url": "https://news.unn.net/news/articleView.html?idxno=598522",
+      "search_url": "https://www.google.com/search?q=%ED%95%9C%EA%B5%AD%EC%9E%A5%ED%95%99%EC%9E%AC%EB%8B%A8"
     },
     {
       "rank": 6,
-      "keyword": "장항준",
-      "traffic": "1000+",
-      "news_title": "서울예대 동기 정웅인 \"장항준 꼬라지 아주 기고만장해\"",
-      "news_url": "https://www.newsis.com/view/NISX20261012_0003822911",
-      "search_url": "https://www.google.com/search?q=%EC%9E%A5%ED%95%AD%EC%A4%80"
+      "keyword": "amd",
+      "traffic": "100+",
+      "news_title": "Introducing AMD Helion, Agentic AI Compute at Rack Scale",
+      "news_url": "https://newsroom.amd.com/news/open-rack-blueprint-scale-agentic-ai/",
+      "search_url": "https://www.google.com/search?q=amd"
     },
     {
       "rank": 7,
-      "keyword": "통영대전 고속도로",
+      "keyword": "군수산업",
       "traffic": "500+",
-      "news_title": "통영대전고속도로에서 4중 추돌 사고…2명 사망·11명 중경상",
-      "news_url": "https://news.kbs.co.kr/news/view.do?ncd=8683221",
-      "search_url": "https://www.google.com/search?q=%ED%86%B5%EC%98%81%EB%8C%80%EC%A0%84%20%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C"
+      "news_title": "트럼프 보란 듯…北, 美타격권 지도 공개하며 다탄두 ICBM 과시",
+      "news_url": "https://www.yna.co.kr/view/AKR20261013061600504",
+      "search_url": "https://www.google.com/search?q=%EA%B5%B0%EC%88%98%EC%82%B0%EC%97%85"
     },
     {
       "rank": 8,
-      "keyword": "cxmt",
-      "traffic": "200+",
-      "news_title": "“Two years ahead of Samsung”: China’s DRAM provocation as CXMT plans to launch next-generation memory this year",
-      "news_url": "https://www.mk.co.kr/en/business/12173993",
-      "search_url": "https://www.google.com/search?q=cxmt"
+      "keyword": "nep vs oma",
+      "traffic": "1000+",
+      "news_title": "Nepal win but ODI status still not secure",
+      "news_url": "https://kathmandupost.com/sports/2026/10/11/nepal-beat-canada-by-24-runs-to-open-league-2-tri-series",
+      "search_url": "https://www.google.com/search?q=nep%20vs%20oma"
     },
     {
       "rank": 9,
-      "keyword": "대장 암",
-      "traffic": "2000+",
-      "news_title": "‘환자 유래 오가노이드’로 전이성 대장암 암세포 진화 과정 밝혀…",
-      "news_url": "https://www.ibric.org/bric/trend/results-of-research.do?mode=view&articleNo=10058791",
-      "search_url": "https://www.google.com/search?q=%EB%8C%80%EC%9E%A5%20%EC%95%94"
+      "keyword": "병무청",
+      "traffic": "1000+",
+      "news_title": "[단독]아시안게임 후폭풍?…올해 병역특례 민원, 5년치 훌쩍 넘어",
+      "news_url": "https://www.nocutnews.co.kr/news/6589835",
+      "search_url": "https://www.google.com/search?q=%EB%B3%91%EB%AC%B4%EC%B2%AD"
     },
     {
       "rank": 10,
-      "keyword": "새만금",
-      "traffic": "500+",
-      "news_title": "韓中, 공급망 핫라인 가동…새만금 투자 협력 확대 논의",
-      "news_url": "https://www.newsis.com/view/NISX20261012_0003822825",
-      "search_url": "https://www.google.com/search?q=%EC%83%88%EB%A7%8C%EA%B8%88"
+      "keyword": "sk 아이젠",
+      "traffic": "100+",
+      "news_title": "SK, 청년 50명에 7200만원 지원 AI인재 육성 나서",
+      "news_url": "https://www.donga.com/news/Economy/article/all/20261012/134828695/2",
+      "search_url": "https://www.google.com/search?q=sk%20%EC%95%84%EC%9D%B4%EC%A0%A0"
     }
   ]
 }
