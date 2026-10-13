@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-13 16:37",
+  "collected_at": "2026-10-14 00:52",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "대한민국 해군",
-      "traffic": "200+",
-      "news_title": "해군 함정 ‘대구함’ 함장·장병들, 8년 만에 대구 찾았다",
-      "news_url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4086749",
-      "search_url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%ED%95%B4%EA%B5%B0"
+      "keyword": "박성온",
+      "traffic": "100+",
+      "news_title": "[포토] 박성온, 왕자님의 꿈",
+      "news_url": "https://enews.imbc.com/News/RetrieveNewsInfo/520973",
+      "search_url": "https://www.google.com/search?q=%EB%B0%95%EC%84%B1%EC%98%A8"
     },
     {
       "rank": 2,
-      "keyword": "cj제일제당",
+      "keyword": "롤러코스터",
       "traffic": "100+",
-      "news_title": "CJ제일제당 ‘서울청년주간’서 친환경 자원순환 가치 공유 : Packnet",
-      "news_url": "https://packnet.co.kr/30/?idx=175074830&bmode=view",
-      "search_url": "https://www.google.com/search?q=cj%EC%A0%9C%EC%9D%BC%EC%A0%9C%EB%8B%B9"
+      "news_title": "오르막에 멈춘 ‘골리앗’…롤러코스터서 추락해 1명 숨져 [현장영상]",
+      "news_url": "https://news.kbs.co.kr/news/view.do?ncd=8684200",
+      "search_url": "https://www.google.com/search?q=%EB%A1%A4%EB%9F%AC%EC%BD%94%EC%8A%A4%ED%84%B0"
     },
     {
       "rank": 3,
-      "keyword": "인천송도소방서",
-      "traffic": "100+",
-      "news_title": "송도소방서 물탱크차 운전 김소연·현지은·설아영, 6000ℓ 물 싣고 화재 현장 누비는 '3인방'",
-      "news_url": "https://www.incheonilbo.com/news/articleView.html?idxno=1333825",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B8%EC%B2%9C%EC%86%A1%EB%8F%84%EC%86%8C%EB%B0%A9%EC%84%9C"
+      "keyword": "애플",
+      "traffic": "500+",
+      "news_title": "[미국 특징주] 애플, 폴더블폰·스마트홈 총출동…'횡보 주가' 깨울까",
+      "news_url": "https://www.newspim.com/news/view/20261014000003",
+      "search_url": "https://www.google.com/search?q=%EC%95%A0%ED%94%8C"
     },
     {
       "rank": 4,
-      "keyword": "유지 원",
-      "traffic": "2000+",
-      "news_title": "'서울 달리기' 마라톤대회 참가했던 20대 여성 사망",
-      "news_url": "https://www.yna.co.kr/view/AKR20261012173400004",
-      "search_url": "https://www.google.com/search?q=%EC%9C%A0%EC%A7%80%20%EC%9B%90"
+      "keyword": "장도연",
+      "traffic": "200+",
+      "news_title": "설인아♥임시완, 묘한 핑크빛 딱 걸렸다..\"나 설렌다\" 고백한 이유('살롱드립') - 조선비즈",
+      "news_url": "https://biz.chosun.com/entertainment/enter_general/2026/10/13/MQZDQY3CG5TGGMDGMVSTAMLCGM/",
+      "search_url": "https://www.google.com/search?q=%EC%9E%A5%EB%8F%84%EC%97%B0"
     },
     {
       "rank": 5,
-      "keyword": "한국장학재단",
+      "keyword": "apple",
       "traffic": "500+",
-      "news_title": "대학생 생활비 대출 ‘빚투’로 악용… 장학재단 관리 부실 지적[2026 국감]",
-      "news_url": "https://news.unn.net/news/articleView.html?idxno=598522",
-      "search_url": "https://www.google.com/search?q=%ED%95%9C%EA%B5%AD%EC%9E%A5%ED%95%99%EC%9E%AC%EB%8B%A8"
+      "news_title": "Apple debuts HomeView hub as it reinvents smart home strategy",
+      "news_url": "https://finance.yahoo.com/technology/article/apple-debuts-homeview-hub-as-it-reinvents-smart-home-strategy-131744984.html",
+      "search_url": "https://www.google.com/search?q=apple"
     },
     {
       "rank": 6,
-      "keyword": "amd",
+      "keyword": "bangladesh vs afghanistan",
       "traffic": "100+",
-      "news_title": "Introducing AMD Helion, Agentic AI Compute at Rack Scale",
-      "news_url": "https://newsroom.amd.com/news/open-rack-blueprint-scale-agentic-ai/",
-      "search_url": "https://www.google.com/search?q=amd"
+      "news_title": "Afghanistan Star Rahmat Shah Joins Virat Kohli In Elite Test Captains List",
+      "news_url": "https://sports.ndtv.com/cricket/afghanistan-star-rahmat-shah-joins-virat-kohli-in-elite-test-captains-list-12177400",
+      "search_url": "https://www.google.com/search?q=bangladesh%20vs%20afghanistan"
     },
     {
       "rank": 7,
-      "keyword": "군수산업",
-      "traffic": "500+",
-      "news_title": "트럼프 보란 듯…北, 美타격권 지도 공개하며 다탄두 ICBM 과시",
-      "news_url": "https://www.yna.co.kr/view/AKR20261013061600504",
-      "search_url": "https://www.google.com/search?q=%EA%B5%B0%EC%88%98%EC%82%B0%EC%97%85"
+      "keyword": "pakistan vs sri lanka",
+      "traffic": "1000+",
+      "news_title": "Deflated Sri Lanka look to prevent whitewash against dominant Pakistan",
+      "news_url": "https://www.cricinfo.com/series/sri-lanka-in-pakistan-2026-27-1550703/pakistan-vs-sri-lanka-3rd-t20i-1550710/match-preview",
+      "search_url": "https://www.google.com/search?q=pakistan%20vs%20sri%20lanka"
     },
     {
       "rank": 8,
-      "keyword": "nep vs oma",
-      "traffic": "1000+",
-      "news_title": "Nepal win but ODI status still not secure",
-      "news_url": "https://kathmandupost.com/sports/2026/10/11/nepal-beat-canada-by-24-runs-to-open-league-2-tri-series",
-      "search_url": "https://www.google.com/search?q=nep%20vs%20oma"
+      "keyword": "사미자",
+      "traffic": "500+",
+      "news_title": "사미자 \"죽을 때까지 쓸 돈 모았지만 백수 생활 걱정\"",
+      "news_url": "https://www.segye.com/newsView/20261012509027",
+      "search_url": "https://www.google.com/search?q=%EC%82%AC%EB%AF%B8%EC%9E%90"
     },
     {
       "rank": 9,
-      "keyword": "병무청",
+      "keyword": "저축은행",
       "traffic": "1000+",
-      "news_title": "[단독]아시안게임 후폭풍?…올해 병역특례 민원, 5년치 훌쩍 넘어",
-      "news_url": "https://www.nocutnews.co.kr/news/6589835",
-      "search_url": "https://www.google.com/search?q=%EB%B3%91%EB%AC%B4%EC%B2%AD"
+      "news_title": "금융감독원, '해킹 유출' 예가람·웰컴저축은행 현장점검(종합)",
+      "news_url": "https://www.yna.co.kr/view/AKR20261012175251002",
+      "search_url": "https://www.google.com/search?q=%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89"
     },
     {
       "rank": 10,
-      "keyword": "sk 아이젠",
-      "traffic": "100+",
-      "news_title": "SK, 청년 50명에 7200만원 지원 AI인재 육성 나서",
-      "news_url": "https://www.donga.com/news/Economy/article/all/20261012/134828695/2",
-      "search_url": "https://www.google.com/search?q=sk%20%EC%95%84%EC%9D%B4%EC%A0%A0"
+      "keyword": "박해영",
+      "traffic": "200+",
+      "news_title": "'모자무싸' 박해영 등 창작자들 \"정당한 보상 위해 저작권법 개정해야\"",
+      "news_url": "https://www.yna.co.kr/view/AKR20261012132600005",
+      "search_url": "https://www.google.com/search?q=%EB%B0%95%ED%95%B4%EC%98%81"
     }
   ]
 }
