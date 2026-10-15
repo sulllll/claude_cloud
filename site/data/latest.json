@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-15 10:23",
+  "collected_at": "2026-10-15 16:18",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "카드뉴스",
-      "traffic": "100+",
-      "news_title": "[광명 해오름 청소년 기자단] [카드뉴스]가을 즐기기",
-      "news_url": "http://www.weschoolnews.com/news/265126",
-      "search_url": "https://www.google.com/search?q=%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A4"
+      "keyword": "최동원",
+      "traffic": "200+",
+      "news_title": "‘최동원 야구 교실’ 11년 만에 프로 선수 첫 배출",
+      "news_url": "https://www.khan.co.kr/article/202610132034015",
+      "search_url": "https://www.google.com/search?q=%EC%B5%9C%EB%8F%99%EC%9B%90"
     },
     {
       "rank": 2,
-      "keyword": "어디가",
+      "keyword": "오스탈",
       "traffic": "1000+",
-      "news_title": "김민석 “강훈식 서울시장 후보? 가능성·미래 열려 있다…역량 검증된 전국적 인물”",
-      "news_url": "https://www.khan.co.kr/article/202610150906001",
-      "search_url": "https://www.google.com/search?q=%EC%96%B4%EB%94%94%EA%B0%80"
+      "news_title": "[단독] 한화, 2000억 더 부른 美 사모펀드 제쳤다… 오스탈USA 인수 ‘본협상’ 돌입",
+      "news_url": "https://it.chosun.com/news/articleView.html?idxno=2023092172097",
+      "search_url": "https://www.google.com/search?q=%EC%98%A4%EC%8A%A4%ED%83%88"
     },
     {
       "rank": 3,
-      "keyword": "kospi",
-      "traffic": "100+",
-      "news_title": "US inflation and AI doubts slam Korea stocks as KOSPI, KOSDAQ trigger sell-sidecars - CHOSUNBIZ",
-      "news_url": "https://biz.chosun.com/en/en-finance/2026/10/15/QNBHG66UFJF6VKKYYSBSLPIAVY/",
-      "search_url": "https://www.google.com/search?q=kospi"
+      "keyword": "조원철",
+      "traffic": "2000+",
+      "news_title": "국정감사 질의하는 윤상현 국민의힘 의원",
+      "news_url": "https://www.newsis.com/view/NISI20261015_0021490271",
+      "search_url": "https://www.google.com/search?q=%EC%A1%B0%EC%9B%90%EC%B2%A0"
     },
     {
       "rank": 4,
-      "keyword": "토스증권",
-      "traffic": "1000+",
-      "news_title": "[게시판] 토스증권, 앱에 '시장' 탭 신설…AI시황 요약 제공",
-      "news_url": "https://www.yna.co.kr/view/AKR20261014049900008",
-      "search_url": "https://www.google.com/search?q=%ED%86%A0%EC%8A%A4%EC%A6%9D%EA%B6%8C"
+      "keyword": "플랭크",
+      "traffic": "100+",
+      "news_title": "61세 여성 '플랭크 5시간' 전 세계 주목…영상 좋아요 1천만회↑[이런일이]",
+      "news_url": "https://www.nocutnews.co.kr/news/6590934",
+      "search_url": "https://www.google.com/search?q=%ED%94%8C%EB%9E%AD%ED%81%AC"
     },
     {
       "rank": 5,
-      "keyword": "독도",
-      "traffic": "100+",
-      "news_title": "[게시판] iM뱅크, '독도의 날' 기념 굿즈 증정 이벤트",
-      "news_url": "https://www.yna.co.kr/view/AKR20261014124200053",
-      "search_url": "https://www.google.com/search?q=%EB%8F%85%EB%8F%84"
+      "keyword": "청년문화예술패스",
+      "traffic": "200+",
+      "news_title": "",
+      "news_url": "",
+      "search_url": "https://www.google.com/search?q=%EC%B2%AD%EB%85%84%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%8C%A8%EC%8A%A4"
     },
     {
       "rank": 6,
-      "keyword": "솔비",
-      "traffic": "2000+",
-      "news_title": "[단독] 가수 솔비♥배우 이규한, 연예계 스타 커플 탄생…내년 결혼",
-      "news_url": "https://www.news1.kr/entertain/celebrity-topic/6320518",
-      "search_url": "https://www.google.com/search?q=%EC%86%94%EB%B9%84"
+      "keyword": "국무회의",
+      "traffic": "200+",
+      "news_title": "\"대통령에 '아닙니다'하기 어려워\"… 장관들, '국무회의 생중계 축소' 건의",
+      "news_url": "https://www.hankookilbo.com/news/article/A2026101415280003260",
+      "search_url": "https://www.google.com/search?q=%EA%B5%AD%EB%AC%B4%ED%9A%8C%EC%9D%98"
     },
     {
       "rank": 7,
-      "keyword": "하이닉스 주가",
-      "traffic": "1000+",
-      "news_title": "\"ASML 호실적에도 시간외 하락\" 삼전·닉스 반등 실패[핫스탁](종합)",
-      "news_url": "https://www.newsis.com/view/NISX20261014_0003826039",
-      "search_url": "https://www.google.com/search?q=%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%A3%BC%EA%B0%80"
+      "keyword": "포스코노동조합",
+      "traffic": "500+",
+      "news_title": "한달 만에 마주 앉은 포스코 노사…잠정 합의안 도출에는 실패",
+      "news_url": "https://www.yna.co.kr/view/AKR20261014167900053",
+      "search_url": "https://www.google.com/search?q=%ED%8F%AC%EC%8A%A4%EC%BD%94%EB%85%B8%EB%8F%99%EC%A1%B0%ED%95%A9"
     },
     {
       "rank": 8,
-      "keyword": "삼전 주가",
-      "traffic": "200+",
-      "news_title": "삼성전자, 차세대 '4F² VCT D램' 개발 재확인…CXMT 메모리 추격 대응",
-      "news_url": "https://zdnet.co.kr/view/?no=20261014162447",
-      "search_url": "https://www.google.com/search?q=%EC%82%BC%EC%A0%84%20%EC%A3%BC%EA%B0%80"
+      "keyword": "경향신문",
+      "traffic": "500+",
+      "news_title": "[인사] 경향신문",
+      "news_url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2479278",
+      "search_url": "https://www.google.com/search?q=%EA%B2%BD%ED%96%A5%EC%8B%A0%EB%AC%B8"
     },
     {
       "rank": 9,
-      "keyword": "리그 오브 레전드",
-      "traffic": "100+",
-      "news_title": "[개발 인사이드] LoL 클래식",
-      "news_url": "https://www.leagueoflegends.com/ko-kr/news/dev/dev-league-classic/",
-      "search_url": "https://www.google.com/search?q=%EB%A6%AC%EA%B7%B8%20%EC%98%A4%EB%B8%8C%20%EB%A0%88%EC%A0%84%EB%93%9C"
+      "keyword": "서장훈의 이웃집 백만장자",
+      "traffic": "1000+",
+      "news_title": "국민차 만든 박종서 “뇌종양으로 57세 은퇴…후배 양성에 100억 투자”",
+      "news_url": "https://www.donga.com/news/Culture/article/all/20261015/134845605/1",
+      "search_url": "https://www.google.com/search?q=%EC%84%9C%EC%9E%A5%ED%9B%88%EC%9D%98%20%EC%9D%B4%EC%9B%83%EC%A7%91%20%EB%B0%B1%EB%A7%8C%EC%9E%A5%EC%9E%90"
     },
     {
       "rank": 10,
-      "keyword": "하이닉스",
-      "traffic": "1000+",
-      "news_title": "[속보] 코스피, 장중 5%대 급락…매도 사이드카 발동",
-      "news_url": "https://news.jtbc.co.kr/article/NB12323081",
-      "search_url": "https://www.google.com/search?q=%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4"
+      "keyword": "tsmc 실적 발표",
+      "traffic": "500+",
+      "news_title": "TSMC, 3분기 순익 68.7% 급증…매출·영업이익률 가이던스 상회(상보)",
+      "news_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439435",
+      "search_url": "https://www.google.com/search?q=tsmc%20%EC%8B%A4%EC%A0%81%20%EB%B0%9C%ED%91%9C"
     }
   ]
 }
