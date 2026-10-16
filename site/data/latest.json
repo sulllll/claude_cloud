@@ -1,9 +1,65 @@
 {
-  "collected_at": "2026-10-17 02:19",
+  "collected_at": "2026-10-17 05:56",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
+      "keyword": "나스닥",
+      "traffic": "500+",
+      "news_title": "[뉴욕증시-1보] 기술주 본격 하강 국면 진입하나…나스닥 2.1%↓",
+      "news_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4439724",
+      "search_url": "https://www.google.com/search?q=%EB%82%98%EC%8A%A4%EB%8B%A5"
+    },
+    {
+      "rank": 2,
+      "keyword": "삼성",
+      "traffic": "500+",
+      "news_title": "삼성·LG 제품, 미국 타임 선정 '최고의 발명품'(종합)",
+      "news_url": "https://www.yna.co.kr/view/AKR20261016023851017",
+      "search_url": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1"
+    },
+    {
+      "rank": 3,
+      "keyword": "이효리",
+      "traffic": "1000+",
+      "news_title": "이효리, 이상순 닮아가네…곱슬머리에 선글라스 셀카",
+      "news_url": "https://www.newsis.com/view/NISX20261016_0003829561",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B4%ED%9A%A8%EB%A6%AC"
+    },
+    {
+      "rank": 4,
+      "keyword": "lcp",
+      "traffic": "200+",
+      "news_title": "MVK Gury: \"I'll show Tatu who's the real Ronaldo\"",
+      "news_url": "https://www.sheepesports.com/en/articles/mvk-gury-i-ll-show-tatu-who-s-the-real-ronaldo-worlds-2026/en",
+      "search_url": "https://www.google.com/search?q=lcp"
+    },
+    {
+      "rank": 5,
+      "keyword": "박준금",
+      "traffic": "200+",
+      "news_title": "술 따르라는 PD 뺨 때렸다?…박준금, '출연 정지' 루머 해명 - 머니투데이",
+      "news_url": "https://www.mt.co.kr/entertainment/2026/10/15/2026101508530773927",
+      "search_url": "https://www.google.com/search?q=%EB%B0%95%EC%A4%80%EA%B8%88"
+    },
+    {
+      "rank": 6,
+      "keyword": "뱀",
+      "traffic": "1000+",
+      "news_title": "“큰 뱀 있어요”…인천 천마산 등산로서 외래종 비단뱀 포획",
+      "news_url": "https://www.donga.com/news/Society/article/all/20261016/134856098/1",
+      "search_url": "https://www.google.com/search?q=%EB%B1%80"
+    },
+    {
+      "rank": 7,
+      "keyword": "l g 에너지 솔루션",
+      "traffic": "2000+",
+      "news_title": "LG엔솔, 이모 전 사장 고발 “오너家 분쟁 개입 변호사법 위반”",
+      "news_url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=227857",
+      "search_url": "https://www.google.com/search?q=l%20g%20%EC%97%90%EB%84%88%EC%A7%80%20%EC%86%94%EB%A3%A8%EC%85%98"
+    },
+    {
+      "rank": 8,
       "keyword": "유실물",
       "traffic": "1000+",
       "news_title": "서울 지하철 유실물 1위는 '지갑'…6년간 접수된 현금만 30억원",
@@ -11,76 +67,20 @@
       "search_url": "https://www.google.com/search?q=%EC%9C%A0%EC%8B%A4%EB%AC%BC"
     },
     {
-      "rank": 2,
+      "rank": 9,
       "keyword": "지예은",
       "traffic": "200+",
-      "news_title": "“잘 모르시네” 지석진×지예은, 심상치 않은 한산한 팬 사인회 현장에 위축↘",
-      "news_url": "https://programs.sbs.co.kr/enter/mygeniesecretary/clip/90105/OC482525627",
+      "news_title": "‘my스타’ 지예은, 이서진의 노련한 케어 덕분에 첫 사인 무사히 완료★",
+      "news_url": "https://programs.sbs.co.kr/enter/mygeniesecretary/clip/90105/OC482525656",
       "search_url": "https://www.google.com/search?q=%EC%A7%80%EC%98%88%EC%9D%80"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "keyword": "최예나",
       "traffic": "200+",
       "news_title": "",
       "news_url": "",
       "search_url": "https://www.google.com/search?q=%EC%B5%9C%EC%98%88%EB%82%98"
-    },
-    {
-      "rank": 4,
-      "keyword": "장승조",
-      "traffic": "10000+",
-      "news_title": "[방송소식] 스튜디오드래곤, 넷플릭스 글로벌 1위 10편 배출",
-      "news_url": "https://www.yna.co.kr/view/AKR20261016149400005",
-      "search_url": "https://www.google.com/search?q=%EC%9E%A5%EC%8A%B9%EC%A1%B0"
-    },
-    {
-      "rank": 5,
-      "keyword": "대만",
-      "traffic": "500+",
-      "news_title": "대만 당국 '베이징서 열리는 쑨원 기념식 행사 참석 말아야\"",
-      "news_url": "https://www.yna.co.kr/view/AKR20261016086700009",
-      "search_url": "https://www.google.com/search?q=%EB%8C%80%EB%A7%8C"
-    },
-    {
-      "rank": 6,
-      "keyword": "기업은행 채용",
-      "traffic": "200+",
-      "news_title": "",
-      "news_url": "",
-      "search_url": "https://www.google.com/search?q=%EA%B8%B0%EC%97%85%EC%9D%80%ED%96%89%20%EC%B1%84%EC%9A%A9"
-    },
-    {
-      "rank": 7,
-      "keyword": "축의금",
-      "traffic": "200+",
-      "news_title": "“하객이 왜 식대까지 고려” vs “원래 축의금은 품앗이” SNS 갑론을박 [당신의견은]",
-      "news_url": "https://www.munhwa.com/article/11624090",
-      "search_url": "https://www.google.com/search?q=%EC%B6%95%EC%9D%98%EA%B8%88"
-    },
-    {
-      "rank": 8,
-      "keyword": "고민시",
-      "traffic": "200+",
-      "news_title": "시급 50배의 유혹 '꿀알바', '오겜' 맞먹을 세계관이 열린다 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/entertainment/2026/10/16/2026101609517297805",
-      "search_url": "https://www.google.com/search?q=%EA%B3%A0%EB%AF%BC%EC%8B%9C"
-    },
-    {
-      "rank": 9,
-      "keyword": "콜오브듀티 모던워페어4",
-      "traffic": "500+",
-      "news_title": "신규 모드와 맵, 모던 워페어 4 시즌 1 로드맵 공개",
-      "news_url": "https://www.gamemeca.com/view.php?gid=1781848",
-      "search_url": "https://www.google.com/search?q=%EC%BD%9C%EC%98%A4%EB%B8%8C%EB%93%80%ED%8B%B0%20%EB%AA%A8%EB%8D%98%EC%9B%8C%ED%8E%98%EC%96%B44"
-    },
-    {
-      "rank": 10,
-      "keyword": "대한민국 군의 극초음속 활공비행체 시험 발사 성공 뉴스와 국방부 발표 내용 알려줘",
-      "traffic": "500+",
-      "news_title": "北, 'HGV 고도화' 韓입장에 \"우리 국방력강화 명분\"",
-      "news_url": "https://www.yna.co.kr/view/AKR20261016173600504",
-      "search_url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%EA%B5%B0%EC%9D%98%20%EA%B7%B9%EC%B4%88%EC%9D%8C%EC%86%8D%20%ED%99%9C%EA%B3%B5%EB%B9%84%ED%96%89%EC%B2%B4%20%EC%8B%9C%ED%97%98%20%EB%B0%9C%EC%82%AC%20%EC%84%B1%EA%B3%B5%20%EB%89%B4%EC%8A%A4%EC%99%80%20%EA%B5%AD%EB%B0%A9%EB%B6%80%20%EB%B0%9C%ED%91%9C%20%EB%82%B4%EC%9A%A9%20%EC%95%8C%EB%A0%A4%EC%A4%98"
     }
   ]
 }
