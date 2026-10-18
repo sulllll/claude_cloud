@@ -1,17 +1,73 @@
 {
-  "collected_at": "2026-10-19 03:00",
+  "collected_at": "2026-10-19 05:31",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "수능",
+      "keyword": "real madrid vs sevilla",
       "traffic": "200+",
-      "news_title": "“수능 문제 보자 5초 만에 답이 눈앞에”…AI 안경 직접 써보니",
-      "news_url": "https://www.donga.com/news/Society/article/all/20261018/134859256/1",
-      "search_url": "https://www.google.com/search?q=%EC%88%98%EB%8A%A5"
+      "news_title": "📸 Arda Güler's elbow: huge controversy during Real Madrid vs Sevilla !",
+      "news_url": "https://sports.yahoo.com/articles/arda-g-lers-elbow-huge-193900139.html",
+      "search_url": "https://www.google.com/search?q=real%20madrid%20vs%20sevilla"
     },
     {
       "rank": 2,
+      "keyword": "편의점",
+      "traffic": "2000+",
+      "news_title": "\"현금도 카드도 아닙니다\"…편의점까지 파고든 '결제 실험'",
+      "news_url": "https://www.hankyung.com/article/2026101889081",
+      "search_url": "https://www.google.com/search?q=%ED%8E%B8%EC%9D%98%EC%A0%90"
+    },
+    {
+      "rank": 3,
+      "keyword": "말라가 대 레알 소시에다드",
+      "traffic": "100+",
+      "news_title": "Málaga vs. Real Sociedad - Game Highlights",
+      "news_url": "https://www.espn.com/video/clip/_/id/50211755/malaga-vs-real-sociedad-game-highlights",
+      "search_url": "https://www.google.com/search?q=%EB%A7%90%EB%9D%BC%EA%B0%80%20%EB%8C%80%20%EB%A0%88%EC%95%8C%20%EC%86%8C%EC%8B%9C%EC%97%90%EB%8B%A4%EB%93%9C"
+    },
+    {
+      "rank": 4,
+      "keyword": "레알 마드리드 대 세비야",
+      "traffic": "2000+",
+      "news_title": "! [FOX TV] 2026년 레알 마드리드 CF vs 세비야 FC - 무료 TV 중계",
+      "news_url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Vtb25mZmhzaHMtdGVjaC5naXRodWIuaW8vY29wYWsvaW5kZXgueG1sIi8+PC9rcnBhbm8+&id=video-fox-tv-2026-cf-vs-fc-tv-kor",
+      "search_url": "https://www.google.com/search?q=%EB%A0%88%EC%95%8C%20%EB%A7%88%EB%93%9C%EB%A6%AC%EB%93%9C%20%EB%8C%80%20%EC%84%B8%EB%B9%84%EC%95%BC"
+    },
+    {
+      "rank": 5,
+      "keyword": "연휴",
+      "traffic": "200+",
+      "news_title": "2027년 음력 설 연휴에는 공무원과 공공기관 직원들이 7일간의 휴가를 갖게 됩니다.",
+      "news_url": "https://www.vietnam.vn/ko/can-bo-cong-chuc-vien-chuc-nghi-7-ngay-tet-am-lich-2027",
+      "search_url": "https://www.google.com/search?q=%EC%97%B0%ED%9C%B4"
+    },
+    {
+      "rank": 6,
+      "keyword": "김건희",
+      "traffic": "200+",
+      "news_title": "[단독] 검찰, “김건희 방조범 성립 가능” 반부패부 보고 받고도 ‘무혐의’",
+      "news_url": "https://www.hani.co.kr/arti/society/society_general/1282961.html",
+      "search_url": "https://www.google.com/search?q=%EA%B9%80%EA%B1%B4%ED%9D%AC"
+    },
+    {
+      "rank": 7,
+      "keyword": "빗썸",
+      "traffic": "100+",
+      "news_title": "“또 욕받이 되겠네”…정보유출 사태에 멍드는 콜센터 상담사들",
+      "news_url": "https://www.koreadaily.com/article/20261017140035515",
+      "search_url": "https://www.google.com/search?q=%EB%B9%97%EC%8D%B8"
+    },
+    {
+      "rank": 8,
+      "keyword": "윤여정",
+      "traffic": "100+",
+      "news_title": "윤여정 팔순 잔치 현장…\"우리끼리 조촐하게 치렀다\"",
+      "news_url": "https://www.segye.com/newsView/20261018515162",
+      "search_url": "https://www.google.com/search?q=%EC%9C%A4%EC%97%AC%EC%A0%95"
+    },
+    {
+      "rank": 9,
       "keyword": "구성환",
       "traffic": "2000+",
       "news_title": "'나혼산' 또 시끌...구성환 번지점프, 뭐가 문제였나 - 머니투데이",
@@ -19,68 +75,12 @@
       "search_url": "https://www.google.com/search?q=%EA%B5%AC%EC%84%B1%ED%99%98"
     },
     {
-      "rank": 3,
+      "rank": 10,
       "keyword": "nottm forest vs arsenal",
       "traffic": "500+",
       "news_title": "Nottingham Forest vs Arsenal: Premier League preview, team news, stats & head-to-head",
       "news_url": "https://www.bbc.com/sport/football/live/cq62yg1vvl1lt",
       "search_url": "https://www.google.com/search?q=nottm%20forest%20vs%20arsenal"
-    },
-    {
-      "rank": 4,
-      "keyword": "ngoại hạng anh",
-      "traffic": "100+",
-      "news_title": "Trực tiếp bóng đá Nottingham Forest - Arsenal: Nhập cuộc chặt chẽ (Ngoại hạng Anh)",
-      "news_url": "https://www.24h.com.vn/bong-da/truc-tiep-bong-da-nottingham-forest-arsenal-quyet-lay-3-diem-bam-duoi-man-city-ngoai-hang-anh-c48a1803719.html",
-      "search_url": "https://www.google.com/search?q=ngo%E1%BA%A1i%20h%E1%BA%A1ng%20anh"
-    },
-    {
-      "rank": 5,
-      "keyword": "premier league",
-      "traffic": "200+",
-      "news_title": "Premier League LIVE: Arsenal beat Forest after Man Utd & Leeds draw, Brighton and Bournemouth win",
-      "news_url": "https://www.bbc.com/sport/football/live/cq62j1yn44jxt",
-      "search_url": "https://www.google.com/search?q=premier%20league"
-    },
-    {
-      "rank": 6,
-      "keyword": "pl",
-      "traffic": "100+",
-      "news_title": "Nacisk niemieckich ekologow. Chcą zablokować polskie inwestycje na Bałtyku",
-      "news_url": "https://www.radiomaryja.pl/informacje/nacisk-niemieckich-ekologow-chca-zablokowac-polskie-inwestycje-na-baltyku/",
-      "search_url": "https://www.google.com/search?q=pl"
-    },
-    {
-      "rank": 7,
-      "keyword": "신세계백화점 강남점",
-      "traffic": "2000+",
-      "news_title": "강풍에 뜯겨 날아간 아파트 지붕…도로를 막은 쓰러진 나무",
-      "news_url": "https://news.kbs.co.kr/news/view.do?ncd=8688463",
-      "search_url": "https://www.google.com/search?q=%EC%8B%A0%EC%84%B8%EA%B3%84%EB%B0%B1%ED%99%94%EC%A0%90%20%EA%B0%95%EB%82%A8%EC%A0%90"
-    },
-    {
-      "rank": 8,
-      "keyword": "노팅엄 포레스트 대 아스널",
-      "traffic": "5000+",
-      "news_title": "실시간 축구 경기: 노팅엄 포레스트 vs 아스널: 프리미어 리그 7라운드",
-      "news_url": "https://www.vietnam.vn/ko/truc-tiep-bong-da-nottingham-forest-vs-arsenal-vong-7-ngoai-hang-anh",
-      "search_url": "https://www.google.com/search?q=%EB%85%B8%ED%8C%85%EC%97%84%20%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8%20%EB%8C%80%20%EC%95%84%EC%8A%A4%EB%84%90"
-    },
-    {
-      "rank": 9,
-      "keyword": "사업",
-      "traffic": "100+",
-      "news_title": "市는 발등 불, 주민은 반발… 부산 생곡소각장 건립사업 이중고",
-      "news_url": "https://www.kmib.co.kr/article/view.asp?arcid=9000023641&code=11131418&sid1=soc&stg=ws_real",
-      "search_url": "https://www.google.com/search?q=%EC%82%AC%EC%97%85"
-    },
-    {
-      "rank": 10,
-      "keyword": "박위",
-      "traffic": "5000+",
-      "news_title": "최강희까지...\"박위 부친, 여배우들과 부녀처럼\" 재조명 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/entertainment/2026/10/18/2026101807255558441",
-      "search_url": "https://www.google.com/search?q=%EB%B0%95%EC%9C%84"
     }
   ]
 }
