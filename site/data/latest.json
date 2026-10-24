@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-24 07:02",
+  "collected_at": "2026-10-24 09:30",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "삼성 갤럭시",
+      "keyword": "단체교섭",
       "traffic": "200+",
-      "news_title": "원UI 10이 갤럭시를 바꾼다... 2027년 삼성 역대급 변화 전망",
-      "news_url": "https://www.betanews.net/article/view/beta202610210189",
-      "search_url": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%20%EA%B0%A4%EB%9F%AD%EC%8B%9C"
+      "news_title": "“원·하청 상생” 내걸었지만…‘사용자성’ 놓고 진통",
+      "news_url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8693997",
+      "search_url": "https://www.google.com/search?q=%EB%8B%A8%EC%B2%B4%EA%B5%90%EC%84%AD"
     },
     {
       "rank": 2,
-      "keyword": "운세",
-      "traffic": "2000+",
-      "news_title": "[오늘의 운세] 2026년 10월 23일 별자리 운세",
-      "news_url": "https://www.ytn.co.kr/_ln/0121_202610230000000002",
-      "search_url": "https://www.google.com/search?q=%EC%9A%B4%EC%84%B8"
+      "keyword": "미래에셋증권",
+      "traffic": "100+",
+      "news_title": "이찬진 '스페이스X 0주' 野 보상촉구에…\"공감, 제재절차 진행\"",
+      "news_url": "https://www.yna.co.kr/view/AKR20261022171200002",
+      "search_url": "https://www.google.com/search?q=%EB%AF%B8%EB%9E%98%EC%97%90%EC%85%8B%EC%A6%9D%EA%B6%8C"
     },
     {
       "rank": 3,
-      "keyword": "세균",
-      "traffic": "1000+",
-      "news_title": "한 입 먹고 또 찍는 ‘더블 딥’…입 속 세균 옮겨갈까?",
-      "news_url": "https://lady.khan.co.kr/health/article/202610231333001",
-      "search_url": "https://www.google.com/search?q=%EC%84%B8%EA%B7%A0"
+      "keyword": "颱風動態",
+      "traffic": "200+",
+      "news_title": "",
+      "news_url": "",
+      "search_url": "https://www.google.com/search?q=%E9%A2%B1%E9%A2%A8%E5%8B%95%E6%85%8B"
     },
     {
       "rank": 4,
-      "keyword": "손주",
-      "traffic": "500+",
-      "news_title": "‘손주 돌봄’ 수당에… 할머니는 돈벌고, 엄마는 걱정 덜고[온나라 다함께 아이키우기 프로젝트]",
-      "news_url": "https://www.munhwa.com/article/11625318",
-      "search_url": "https://www.google.com/search?q=%EC%86%90%EC%A3%BC"
+      "keyword": "조세",
+      "traffic": "2000+",
+      "news_title": "",
+      "news_url": "",
+      "search_url": "https://www.google.com/search?q=%EC%A1%B0%EC%84%B8"
     },
     {
       "rank": 5,
-      "keyword": "lpl",
-      "traffic": "100+",
-      "news_title": "Avon investment adviser pleads guilty in $3.3M fraud scheme",
-      "news_url": "https://hartfordbusiness.com/article/avon-investment-adviser-pleads-guilty-in-3-3m-fraud-scheme/",
-      "search_url": "https://www.google.com/search?q=lpl"
+      "keyword": "조선소",
+      "traffic": "1000+",
+      "news_title": "‘마스가’ 첫발은 뗐지만... 인력 확보·일감 수주 ‘산 넘어 산’",
+      "news_url": "https://www.chosun.com/economy/industry-company/2026/10/24/RRVVEJ425NBCDFJ44SNCALOZ5E/",
+      "search_url": "https://www.google.com/search?q=%EC%A1%B0%EC%84%A0%EC%86%8C"
     },
     {
       "rank": 6,
-      "keyword": "피싱",
-      "traffic": "500+",
-      "news_title": "“AI, 전력망-수도시설 공격방법 90% 알아내”",
-      "news_url": "https://www.donga.com/news/Inter/article/all/20261023/134893747/2",
-      "search_url": "https://www.google.com/search?q=%ED%94%BC%EC%8B%B1"
+      "keyword": "cfo",
+      "traffic": "200+",
+      "news_title": "How CFOs can get better at post-deal integration",
+      "news_url": "https://www.cfobrew.com/stories/how-cfos-can-get-better-post-acquisition-integration",
+      "search_url": "https://www.google.com/search?q=cfo"
     },
     {
       "rank": 7,
-      "keyword": "동아일보",
-      "traffic": "500+",
-      "news_title": "",
-      "news_url": "",
-      "search_url": "https://www.google.com/search?q=%EB%8F%99%EC%95%84%EC%9D%BC%EB%B3%B4"
+      "keyword": "서울날씨",
+      "traffic": "100000+",
+      "news_title": "주말 태풍 ’참피’ 영향…제주·남해안 비바람",
+      "news_url": "https://www.yonhapnewstv.co.kr/news/MYH20261024083115GzK",
+      "search_url": "https://www.google.com/search?q=%EC%84%9C%EC%9A%B8%EB%82%A0%EC%94%A8"
     },
     {
       "rank": 8,
-      "keyword": "상어",
-      "traffic": "1000+",
-      "news_title": "상어 '부캉이' 이제 진짜 바다로 돌아갔나…모습 안 보여",
-      "news_url": "https://www.nocutnews.co.kr/news/6596113",
-      "search_url": "https://www.google.com/search?q=%EC%83%81%EC%96%B4"
+      "keyword": "선수",
+      "traffic": "500+",
+      "news_title": "“돌연 생리 터졌는데도 완주”…쉬쉬하던 女선수들 달라진 이유",
+      "news_url": "https://www.joongang.co.kr/article/25471632",
+      "search_url": "https://www.google.com/search?q=%EC%84%A0%EC%88%98"
     },
     {
       "rank": 9,
-      "keyword": "사과",
-      "traffic": "500+",
-      "news_title": "진천 옥동유치원, 사과밭 현장체험학습 실시",
-      "news_url": "https://www.ccdn.co.kr/news/articleView.html?idxno=1106400",
-      "search_url": "https://www.google.com/search?q=%EC%82%AC%EA%B3%BC"
+      "keyword": "스마트 폰",
+      "traffic": "2000+",
+      "news_title": "1분 만에 품절된 아이폰 듀오, 지금 주문해도 내년에 받는다고?",
+      "news_url": "https://story.pay.naver.com/content/3775_3_C1",
+      "search_url": "https://www.google.com/search?q=%EC%8A%A4%EB%A7%88%ED%8A%B8%20%ED%8F%B0"
     },
     {
       "rank": 10,
-      "keyword": "화재",
-      "traffic": "200+",
-      "news_title": "“AI로 전기화재 원인 밝힌다”…전기안전공사, 화재감식 기술혁신 성과 공유",
-      "news_url": "https://www.electimes.com/news/articleView.html?idxno=373833",
-      "search_url": "https://www.google.com/search?q=%ED%99%94%EC%9E%AC"
+      "keyword": "신애라",
+      "traffic": "1000+",
+      "news_title": "\"새 식구 생겨\"' 신애라♥차인표, 며느리 언급…\"가족 모습 달라져\" ('애라네')",
+      "news_url": "https://www.koreadaily.com/article/20261023091808265",
+      "search_url": "https://www.google.com/search?q=%EC%8B%A0%EC%95%A0%EB%9D%BC"
     }
   ]
 }
