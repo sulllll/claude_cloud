@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-28 10:10",
+  "collected_at": "2026-10-28 17:18",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "그랜드 테프트 오토 vi",
+      "keyword": "원당역",
       "traffic": "200+",
-      "news_title": "“게임 하나 때문에 150만명 결근?”…1조원 손실 전망까지 나온 美, 무슨 일",
-      "news_url": "https://www.sedaily.com/article/20106659",
-      "search_url": "https://www.google.com/search?q=%EA%B7%B8%EB%9E%9C%EB%93%9C%20%ED%85%8C%ED%94%84%ED%8A%B8%20%EC%98%A4%ED%86%A0%20vi"
+      "news_title": "[속보]3호선 원당역서 20대 여성 역무원 흉기 피습…가해자는 동료",
+      "news_url": "https://www.munhwa.com/article/11626972",
+      "search_url": "https://www.google.com/search?q=%EC%9B%90%EB%8B%B9%EC%97%AD"
     },
     {
       "rank": 2,
-      "keyword": "sk하이닉스 ir",
-      "traffic": "200+",
-      "news_title": "블룸버그 \"솔리다임, 미국에 60조원 낸드공장 추진\"",
-      "news_url": "https://www.yna.co.kr/view/AKR20261028011300009",
-      "search_url": "https://www.google.com/search?q=sk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20ir"
+      "keyword": "신유빈",
+      "traffic": "2000+",
+      "news_title": "당진시체육회, 11월 14~15일 '신유빈과 함께하는 전국 유소년 탁구 축제'",
+      "news_url": "https://www.idjnews.kr/news/articleView.html?idxno=303551",
+      "search_url": "https://www.google.com/search?q=%EC%8B%A0%EC%9C%A0%EB%B9%88"
     },
     {
       "rank": 3,
-      "keyword": "대신증권",
+      "keyword": "할인",
       "traffic": "200+",
-      "news_title": "대신증권, 해킹 사고 발생…금융권 해킹 증권업계로 확산(상보)",
-      "news_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4441503",
-      "search_url": "https://www.google.com/search?q=%EB%8C%80%EC%8B%A0%EC%A6%9D%EA%B6%8C"
+      "news_title": "2026 코리아 그랜드 페스티벌 - 영상 | 멀티미디어",
+      "news_url": "https://www.korea.kr/multi/mediaNewsView.do?newsId=148974469&pWise=sub&pWiseSub=R6",
+      "search_url": "https://www.google.com/search?q=%ED%95%A0%EC%9D%B8"
     },
     {
       "rank": 4,
-      "keyword": "도박",
+      "keyword": "신문",
       "traffic": "200+",
-      "news_title": "4900억 불법도박사이트 운영진 단합대회 사진",
-      "news_url": "https://www.munhwa.com/article/11626691",
-      "search_url": "https://www.google.com/search?q=%EB%8F%84%EB%B0%95"
+      "news_title": "한국신문방송편집인협회, 제27대 회장에 신종수 국민일보 편집인 선출",
+      "news_url": "https://www.incheonilbo.com/news/articleView.html?idxno=1335346",
+      "search_url": "https://www.google.com/search?q=%EC%8B%A0%EB%AC%B8"
     },
     {
       "rank": 5,
-      "keyword": "아주대 소아 응급실",
-      "traffic": "2000+",
-      "news_title": "\"극심한 무력감·분노\"…경찰 '압수수색 사과 거부'에 아주대병원 소아응급센터 교수 7명 사직",
-      "news_url": "https://www.medigatenews.com/news/666187207",
-      "search_url": "https://www.google.com/search?q=%EC%95%84%EC%A3%BC%EB%8C%80%20%EC%86%8C%EC%95%84%20%EC%9D%91%EA%B8%89%EC%8B%A4"
+      "keyword": "정부",
+      "traffic": "500+",
+      "news_title": "[속보] 정부, 엘리엇 국제투자분쟁 최종 패소‥1천530억 배상책임 확정",
+      "news_url": "https://imnews.imbc.com/news/2026/society/article/6861343_36918.html",
+      "search_url": "https://www.google.com/search?q=%EC%A0%95%EB%B6%80"
     },
     {
       "rank": 6,
-      "keyword": "국민연금",
-      "traffic": "500+",
-      "news_title": "청년 생애 첫 연금보험료 지원 사전신청 1만명 넘어",
-      "news_url": "https://www.yna.co.kr/view/AKR20261028056200530",
-      "search_url": "https://www.google.com/search?q=%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88"
+      "keyword": "콜 오브 듀티: 모던 워 페어 4",
+      "traffic": "5000+",
+      "news_title": "\"이태원참사 영상 쓴 '콜 오브 듀티' 몰상식\"‥유가족, 삭제 요구",
+      "news_url": "https://imnews.imbc.com/news/2026/society/article/6861369_36918.html",
+      "search_url": "https://www.google.com/search?q=%EC%BD%9C%20%EC%98%A4%EB%B8%8C%20%EB%93%80%ED%8B%B0%3A%20%EB%AA%A8%EB%8D%98%20%EC%9B%8C%20%ED%8E%98%EC%96%B4%204"
     },
     {
       "rank": 7,
-      "keyword": "어닝콜",
+      "keyword": "k뷰티",
       "traffic": "200+",
-      "news_title": "주가는 떨어지는데 팔 수가 없다?…소수점 거래의 사각지대",
-      "news_url": "https://www.ajunews.com/view/20261019153547134",
-      "search_url": "https://www.google.com/search?q=%EC%96%B4%EB%8B%9D%EC%BD%9C"
+      "news_title": "K뷰티, 계속 잘나갈까…아마존의 대답은 “시장 무궁무진”",
+      "news_url": "https://www.khan.co.kr/article/202610272049035",
+      "search_url": "https://www.google.com/search?q=k%EB%B7%B0%ED%8B%B0"
     },
     {
       "rank": 8,
-      "keyword": "아버지",
+      "keyword": "연합뉴스",
       "traffic": "5000+",
-      "news_title": "\"아버지 장례비 750만 원 혼자 냈는데\"…부의금 싹 달라는 작은아버지",
-      "news_url": "https://www.news1.kr/society/general-society/6333729",
-      "search_url": "https://www.google.com/search?q=%EC%95%84%EB%B2%84%EC%A7%80"
+      "news_title": "수형자가 유유히 교도소 정문 걸어나갔다? 천안서 '황당' 해프닝",
+      "news_url": "https://www.yna.co.kr/view/AKR20261027046700063",
+      "search_url": "https://www.google.com/search?q=%EC%97%B0%ED%95%A9%EB%89%B4%EC%8A%A4"
     },
     {
       "rank": 9,
-      "keyword": "헤이 지니",
-      "traffic": "100+",
-      "news_title": "\"'밥값 해, 일부러 야근해?' 막차 끊길 때까지 일 강요\"…헤이지니 또 폭로",
-      "news_url": "https://www.news1.kr/society/general-society/6333612",
-      "search_url": "https://www.google.com/search?q=%ED%97%A4%EC%9D%B4%20%EC%A7%80%EB%8B%88"
+      "keyword": "이터널 리턴",
+      "traffic": "200+",
+      "news_title": "게이밍모니터 큐닉스, 이터널 리턴 e스포츠 대회에 모니터 30대 공급… 전국 PC방 설치 확대하며 게이밍 시장 입지 강화",
+      "news_url": "https://www.ilovepcbang.com/bbs/view.html?idxno=72118",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B4%ED%84%B0%EB%84%90%20%EB%A6%AC%ED%84%B4"
     },
     {
       "rank": 10,
-      "keyword": "창신 메모리 테크놀로지",
-      "traffic": "1000+",
-      "news_title": "[단독] \"AI, 중국칩만으론 불안\"… 고성능 한국 D램 구하기 '혈안'",
-      "news_url": "https://www.mk.co.kr/news/business/12187432",
-      "search_url": "https://www.google.com/search?q=%EC%B0%BD%EC%8B%A0%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80"
+      "keyword": "한국프로농구",
+      "traffic": "200+",
+      "news_title": "초유의 규정 위반, 소노는 재경기 요청 ‘역대급 오류’",
+      "news_url": "https://news.kbs.co.kr/news/view.do?ncd=8697048",
+      "search_url": "https://www.google.com/search?q=%ED%95%9C%EA%B5%AD%ED%94%84%EB%A1%9C%EB%86%8D%EA%B5%AC"
     }
   ]
 }
