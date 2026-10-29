@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-29 15:57",
+  "collected_at": "2026-10-29 23:07",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "땅",
-      "traffic": "5000+",
-      "news_title": "\"조상 땅 있다길래 구청 갔더니\"…65세 남성, 5만7000평 찾았다",
-      "news_url": "https://www.fnnews.com/news/202610282150002375",
-      "search_url": "https://www.google.com/search?q=%EB%95%85"
+      "keyword": "김헌곤",
+      "traffic": "200+",
+      "news_title": "[사진] 김헌곤, 안타 성공",
+      "news_url": "https://www.chosun.com/sports/sports_photo/2026/10/29/MUYDMM3FMJTDON3DGIZDGMLCMY/",
+      "search_url": "https://www.google.com/search?q=%EA%B9%80%ED%97%8C%EA%B3%A4"
     },
     {
       "rank": 2,
-      "keyword": "신세계",
-      "traffic": "500+",
-      "news_title": "[속보] 롯데百 센텀시티점, 신세계 품으로",
-      "news_url": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=00&key=20261029.99099008674",
-      "search_url": "https://www.google.com/search?q=%EC%8B%A0%EC%84%B8%EA%B3%84"
+      "keyword": "현대자동차",
+      "traffic": "10000+",
+      "news_title": "현대차, 파업에도 3분기 영업익 증가…연간 목표는 눈높이 낮춰",
+      "news_url": "https://www.electimes.com/news/articleView.html?idxno=374105",
+      "search_url": "https://www.google.com/search?q=%ED%98%84%EB%8C%80%EC%9E%90%EB%8F%99%EC%B0%A8"
     },
     {
       "rank": 3,
-      "keyword": "손정범",
-      "traffic": "5000+",
-      "news_title": "내분설 ‘96라인’ 전원 재발탁...모레노 감독 11월 A매치 대표팀 명단 발표",
-      "news_url": "https://www.chosun.com/sports/football/2026/10/29/2YV7IAIWVBG6LJFTPHLCZL7NTQ/",
-      "search_url": "https://www.google.com/search?q=%EC%86%90%EC%A0%95%EB%B2%94"
+      "keyword": "슈퍼맨이 돌아왔다",
+      "traffic": "200+",
+      "news_title": "‘비트코인 대박’ 기욤, 양평 별장→서울대공원뷰 ‘서울 집’ 공개 (‘슈돌’)",
+      "news_url": "https://www.osen.co.kr/article/G1112900048",
+      "search_url": "https://www.google.com/search?q=%EC%8A%88%ED%8D%BC%EB%A7%A8%EC%9D%B4%20%EB%8F%8C%EC%95%84%EC%99%94%EB%8B%A4"
     },
     {
       "rank": 4,
-      "keyword": "파라타항공",
-      "traffic": "200+",
-      "news_title": "파라타항공 키우는 위닉스…공격 투자에 재무 부담 확대",
-      "news_url": "https://www.newspim.com/news/view/20261029000972",
-      "search_url": "https://www.google.com/search?q=%ED%8C%8C%EB%9D%BC%ED%83%80%ED%95%AD%EA%B3%B5"
+      "keyword": "퇴직",
+      "traffic": "2000+",
+      "news_title": "2030년 퇴직금 사라진다…'기금형 퇴직연금'도 도입",
+      "news_url": "https://www.hankyung.com/article/2026102943271",
+      "search_url": "https://www.google.com/search?q=%ED%87%B4%EC%A7%81"
     },
     {
       "rank": 5,
-      "keyword": "중앙일보",
-      "traffic": "10000+",
-      "news_title": "승무원 아내 고단수였다…의사 남편이 속은 ‘충격 사생활’",
-      "news_url": "https://www.joongang.co.kr/article/25472920",
-      "search_url": "https://www.google.com/search?q=%EC%A4%91%EC%95%99%EC%9D%BC%EB%B3%B4"
+      "keyword": "오픈ai",
+      "traffic": "500+",
+      "news_title": "중국 AI '증류 공격' 표적, 클로드에서 오픈AI '아스트라'로 이동",
+      "news_url": "https://www.ytn.co.kr/_ln/0104_202610291544271157",
+      "search_url": "https://www.google.com/search?q=%EC%98%A4%ED%94%88ai"
     },
     {
       "rank": 6,
-      "keyword": "강석우",
-      "traffic": "2000+",
-      "news_title": "미남이 미남 낳았네…강석우, '정용화 닮은꼴' 아들 득남에 화색 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/entertainment/2026/10/29/2026102909180259353",
-      "search_url": "https://www.google.com/search?q=%EA%B0%95%EC%84%9D%EC%9A%B0"
+      "keyword": "지하철",
+      "traffic": "200+",
+      "news_title": "지하철 7호선, 의정부·양주를 지나 포천까지! 도봉산-옥정 연장선",
+      "news_url": "https://mediahub.seoul.go.kr/archives/2019857",
+      "search_url": "https://www.google.com/search?q=%EC%A7%80%ED%95%98%EC%B2%A0"
     },
     {
       "rank": 7,
-      "keyword": "메가박스",
-      "traffic": "200+",
-      "news_title": "메가박스, 11월 단독 상영 '메가 온리'…다큐·애니부터 英 명작 연극까지 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/culture/2026/10/29/2026102913254737163",
-      "search_url": "https://www.google.com/search?q=%EB%A9%94%EA%B0%80%EB%B0%95%EC%8A%A4"
+      "keyword": "시바이누코인",
+      "traffic": "100+",
+      "news_title": "시바이누(SHIB), 미결제 약정 5,000만 달러 붕괴 위기...\"레버리지 베팅만 폭주\"",
+      "news_url": "https://www.coinreaders.com/266004",
+      "search_url": "https://www.google.com/search?q=%EC%8B%9C%EB%B0%94%EC%9D%B4%EB%88%84%EC%BD%94%EC%9D%B8"
     },
     {
       "rank": 8,
-      "keyword": "박시후",
-      "traffic": "100+",
-      "news_title": "“박시후가 전남편에 여자 소개” 허위사실 유포 여성 징역형",
-      "news_url": "https://www.munhwa.com/article/11627339",
-      "search_url": "https://www.google.com/search?q=%EB%B0%95%EC%8B%9C%ED%9B%84"
+      "keyword": "런닝맨",
+      "traffic": "2000+",
+      "news_title": "“성적 접촉 아냐” 안은진에 뽀뽀 요구 ‘런닝맨’ 결론",
+      "news_url": "https://www.munhwa.com/article/11627410",
+      "search_url": "https://www.google.com/search?q=%EB%9F%B0%EB%8B%9D%EB%A7%A8"
     },
     {
       "rank": 9,
-      "keyword": "하남시",
-      "traffic": "1000+",
-      "news_title": "\"서울 코앞 10만가구 공급\" 승부수 띄운 정부…집값 안정 효과는 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/estate/2026/10/29/2026102910524062982",
-      "search_url": "https://www.google.com/search?q=%ED%95%98%EB%82%A8%EC%8B%9C"
+      "keyword": "구속영장",
+      "traffic": "5000+",
+      "news_title": "구로 주택가 ‘미라 시신’은 아내와 함께 거주하던 중국인···타살 혐의점 발견 안 돼",
+      "news_url": "https://www.khan.co.kr/article/202610291815011",
+      "search_url": "https://www.google.com/search?q=%EA%B5%AC%EC%86%8D%EC%98%81%EC%9E%A5"
     },
     {
       "rank": 10,
-      "keyword": "일회용품",
-      "traffic": "200+",
-      "news_title": "숨 쉬며 마신 나노플라스틱, 폐 염증 유발 원리 밝혀졌다",
-      "news_url": "https://ujnews.co.kr/news/newsview.php?ncode=1065583684104229",
-      "search_url": "https://www.google.com/search?q=%EC%9D%BC%ED%9A%8C%EC%9A%A9%ED%92%88"
+      "keyword": "이승민",
+      "traffic": "500+",
+      "news_title": "이승민, 좋았어",
+      "news_url": "https://mobile.newsis.com/photo/NISI20261029_0021510987",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B4%EC%8A%B9%EB%AF%BC"
     }
   ]
 }
