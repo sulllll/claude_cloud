@@ -1,86 +1,86 @@
 {
-  "collected_at": "2026-10-30 09:48",
+  "collected_at": "2026-10-30 15:59",
   "geo": "KR",
   "items": [
     {
       "rank": 1,
-      "keyword": "이용",
-      "traffic": "200+",
-      "news_title": "부천시, ‘맘편한 택시’ 병원 외 이용 허용 11월까지 연장",
-      "news_url": "https://www.efocus.co.kr/news/articleView.html?idxno=57133",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B4%EC%9A%A9"
+      "keyword": "고속철도",
+      "traffic": "500+",
+      "news_title": "서울서 부산까지 1시간 주파…시속 400km 고속철 핵심기술 개발 추진",
+      "news_url": "https://www.dongascience.com/ko/news/80621",
+      "search_url": "https://www.google.com/search?q=%EA%B3%A0%EC%86%8D%EC%B2%A0%EB%8F%84"
     },
     {
       "rank": 2,
-      "keyword": "이예원",
+      "keyword": "인천공항",
       "traffic": "200+",
-      "news_title": "정소이, KLPGA 투어 에쓰오일 챔피언십 1R 단독 1위…첫 승 도전(종합)",
-      "news_url": "https://www.yna.co.kr/view/AKR20261029187551007",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B4%EC%98%88%EC%9B%90"
+      "news_title": "[속보] 인천공항 항공사 네트워크 일부 장애…출국수속 지연",
+      "news_url": "https://www.yonhapnewstv.co.kr/news/MYH20261030143325P5W",
+      "search_url": "https://www.google.com/search?q=%EC%9D%B8%EC%B2%9C%EA%B3%B5%ED%95%AD"
     },
     {
       "rank": 3,
-      "keyword": "압수수색",
-      "traffic": "500+",
-      "news_title": "[단독] 아주대병원장 \"경찰, 수차례 '죄송하다' 사과…사직서 제출 3명도 설득할 것”",
-      "news_url": "https://www.medigatenews.com/news/2021867961",
-      "search_url": "https://www.google.com/search?q=%EC%95%95%EC%88%98%EC%88%98%EC%83%89"
+      "keyword": "차예련",
+      "traffic": "5000+",
+      "news_title": "“뺨 때리고 고막 찢어져”…차예련, 학폭 의혹에 “사실무근” 반박 [공식]",
+      "news_url": "https://www.mk.co.kr/news/hot-issues/12191552",
+      "search_url": "https://www.google.com/search?q=%EC%B0%A8%EC%98%88%EB%A0%A8"
     },
     {
       "rank": 4,
-      "keyword": "메이저 리그 사커",
-      "traffic": "1000+",
-      "news_title": "'충격 평가' 손흥민+메시+레반도프스키 사실상 K리그서 뛰는 수준...헝가리-키프로스-폴란드보다 낮은 MLS",
-      "news_url": "https://www.sportschosun.com/football/2026-10-29/202610290100186540012693",
-      "search_url": "https://www.google.com/search?q=%EB%A9%94%EC%9D%B4%EC%A0%80%20%EB%A6%AC%EA%B7%B8%20%EC%82%AC%EC%BB%A4"
+      "keyword": "우주",
+      "traffic": "200+",
+      "news_title": "인천시교육청, 최초 우주인 이소연 박사와 만나는 우주과학 교실",
+      "news_url": "https://www.newstown.co.kr/news/articleView.html?idxno=720259",
+      "search_url": "https://www.google.com/search?q=%EC%9A%B0%EC%A3%BC"
     },
     {
       "rank": 5,
-      "keyword": "머스캣",
-      "traffic": "500+",
-      "news_title": "귀한 몸에서 찬밥 신세로… 샤인머스캣의 씁쓸한 추락[이용재의 식사의 窓]",
-      "news_url": "https://www.donga.com/news/Opinion/article/all/20261029/134935966/2",
-      "search_url": "https://www.google.com/search?q=%EB%A8%B8%EC%8A%A4%EC%BA%A3"
+      "keyword": "울산과학대학교",
+      "traffic": "200+",
+      "news_title": "",
+      "news_url": "",
+      "search_url": "https://www.google.com/search?q=%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%EA%B5%90"
     },
     {
       "rank": 6,
-      "keyword": "구자철",
-      "traffic": "200+",
-      "news_title": "K리그1 제주, 구자철 관련 의혹 부인…\"법적 검토 바탕 강경 대응할 것\"",
-      "news_url": "https://www.newsis.com/view/NISX20261029_0003847129",
-      "search_url": "https://www.google.com/search?q=%EA%B5%AC%EC%9E%90%EC%B2%A0"
+      "keyword": "해병대",
+      "traffic": "2000+",
+      "news_title": "후임병 성추행·폭행한 해병대 선임병 징역 1년…법정구속",
+      "news_url": "https://www.yonhapnewstv.co.kr/news/AKR20261030144457s44",
+      "search_url": "https://www.google.com/search?q=%ED%95%B4%EB%B3%91%EB%8C%80"
     },
     {
       "rank": 7,
-      "keyword": "브래드 갈링하우스",
+      "keyword": "휘발유",
       "traffic": "200+",
-      "news_title": "XRP: 63조 달러 굴리는 ’월가 공룡’ 은행, 드디어 XRP 품었다",
-      "news_url": "https://kr.investing.com/news/cryptocurrency-news/article-2147324",
-      "search_url": "https://www.google.com/search?q=%EB%B8%8C%EB%9E%98%EB%93%9C%20%EA%B0%88%EB%A7%81%ED%95%98%EC%9A%B0%EC%8A%A4"
+      "news_title": "日, 겨울 전기·가스요금 보조키로…휘발유보조금은 단계적 축소",
+      "news_url": "https://www.yna.co.kr/view/AKR20261029205000073",
+      "search_url": "https://www.google.com/search?q=%ED%9C%98%EB%B0%9C%EC%9C%A0"
     },
     {
       "rank": 8,
-      "keyword": "수도권 광역급행철도 c노선",
-      "traffic": "100+",
-      "news_title": "",
-      "news_url": "",
-      "search_url": "https://www.google.com/search?q=%EC%88%98%EB%8F%84%EA%B6%8C%20%EA%B4%91%EC%97%AD%EA%B8%89%ED%96%89%EC%B2%A0%EB%8F%84%20c%EB%85%B8%EC%84%A0"
+      "keyword": "택시",
+      "traffic": "2000+",
+      "news_title": "홍성군 효도택시 8천400명 시범운행 신청…내년 1월 정식 시행",
+      "news_url": "https://www.yna.co.kr/view/AKR20261030048700063",
+      "search_url": "https://www.google.com/search?q=%ED%83%9D%EC%8B%9C"
     },
     {
       "rank": 9,
-      "keyword": "도경완",
-      "traffic": "10000+",
-      "news_title": "120억 집 살면서 \"통장에 25만원\"...도경완 '편스토랑' 결국 - 머니투데이",
-      "news_url": "https://www.mt.co.kr/entertainment/2026/10/29/2026102921054052433",
-      "search_url": "https://www.google.com/search?q=%EB%8F%84%EA%B2%BD%EC%99%84"
+      "keyword": "의정부시",
+      "traffic": "200+",
+      "news_title": "동래구노인복지관, 노인 일자리 및 사회활동 지원사업 참여자 대상 문화 활동 나들이 실시",
+      "news_url": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0300&key=20261028.99099008394",
+      "search_url": "https://www.google.com/search?q=%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C"
     },
     {
       "rank": 10,
-      "keyword": "인텔",
-      "traffic": "1000+",
-      "news_title": "인텔, 실적 호조에도 가이던스 실망…시간외서 주가 16% 폭락(상보)",
-      "news_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442052",
-      "search_url": "https://www.google.com/search?q=%EC%9D%B8%ED%85%94"
+      "keyword": "대한민국 해병대",
+      "traffic": "100+",
+      "news_title": "[영상] 4년 개발 끝에…내년부터 해병대 상륙공격헬기 양산 돌입",
+      "news_url": "https://www.yna.co.kr/view/AKR20261029169600704",
+      "search_url": "https://www.google.com/search?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%20%ED%95%B4%EB%B3%91%EB%8C%80"
     }
   ]
 }
