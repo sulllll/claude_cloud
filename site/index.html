@@ -7,11 +7,12 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@500;700;900&family=Space+Grotesk:wght@500;700&display=swap">
+<!-- only the intro reel uses these fonts: load without blocking the page (play() waits for it) -->
+<link rel="stylesheet" id="reel-fonts" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+KR:wght@500;700;900&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
 <style>
   :root {
     --bg: #f7f7f5; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70;
-    --line: #e4e4e0; --accent: #2f6fed; --accent-soft: #e8f0fe; --up: #d93b3b;
+    --line: #e4e4e0; --accent: #2f6fed; --accent-soft: #e8f0fe; --up: #b42318;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -32,10 +33,11 @@
   .card h2 { font-size: 1.05rem; margin: 0 0 12px; display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
   .card h2 small { color: var(--muted); font-weight: 400; }
   ol { list-style: none; margin: 0; padding: 0; }
-  li.row { display: grid; grid-template-columns: 2.2rem 1fr auto; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
+  li.row { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
   li.row:first-child { border-top: 0; }
   .rank { font-weight: 700; font-size: 1.1rem; color: var(--accent); text-align: center; }
-  .kw a { color: var(--text); font-weight: 600; text-decoration: none; }
+  .kw { min-width: 0; }
+  .kw a { color: var(--text); font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
   .kw a:hover { text-decoration: underline; }
   .kw .news { display: block; color: var(--muted); font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .kw .news a { color: var(--muted); font-weight: 400; }
@@ -43,6 +45,7 @@
   .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
   select, a.btn { font: inherit; font-size: .9rem; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--text); text-decoration: none; }
   .empty { color: var(--muted); padding: 12px 0; }
+  .age { white-space: nowrap; }
   table { width: 100%; border-collapse: collapse; font-size: .88rem; }
   th, td { text-align: left; padding: 6px 4px; border-top: 1px solid var(--line); vertical-align: top; }
   th { color: var(--muted); font-weight: 500; }
@@ -67,7 +70,7 @@
 <main>
   <header>
     <h1>📈 실시간 트렌드 기록</h1>
-    <p>구글 트렌드(대한민국) 인기 검색어 1~10위를 매시간 자동으로 모아 쌓아 둡니다.</p>
+    <p>구글 트렌드(대한민국) 인기 검색어 1~10위를 자동으로 모아 쌓아 둡니다. (보통 몇 시간 간격)</p>
     <div class="header-actions">
       <button class="btn" id="replay-intro" type="button">▶ 인트로 영상 다시 보기</button>
     </div>
@@ -103,11 +106,11 @@
     </div>
   </section>
 
-  <footer>GitHub Actions가 매시간 자동으로 갱신합니다 · 데이터 출처: Google Trends</footer>
+  <footer>GitHub Actions가 자동으로 갱신합니다 (매시간 예약, 실제로는 보통 몇 시간 간격) · 데이터 출처: Google Trends</footer>
 </main>
 
-<div id="intro" hidden>
-  <canvas aria-label="MARKET PULSE 인트로 영상"></canvas>
+<div id="intro" hidden role="dialog" aria-modal="true" aria-label="MARKET PULSE 인트로 영상">
+  <canvas aria-hidden="true"></canvas>
   <div class="ui">
     <button type="button" id="intro-sound">🔊 소리 켜기</button>
     <button type="button" id="intro-skip">건너뛰기 ›</button>
@@ -124,22 +127,39 @@ function el(tag, attrs = {}, text) {
   return e;
 }
 
-function renderList(target, items) {
+const LOAD_FAILED = "기록을 불러오지 못했어요. 잠시 뒤 새로고침해 주세요.";
+
+// feed links are external data: only ever link http(s) URLs
+const safeUrl = u => (typeof u === "string" && /^https?:\/\//i.test(u) ? u : null);
+const link = (url, text) => (safeUrl(url)
+  ? el("a", { href: url, target: "_blank", rel: "noopener" }, text)
+  : document.createTextNode(text));
+
+// "2026-11-03 15:31" is Korea time; say how old it is, since collection is not really hourly
+function age(collectedAt) {
+  const t = Date.parse(String(collectedAt).replace(" ", "T") + ":00+09:00");
+  if (!Number.isFinite(t)) return "";
+  const min = Math.max(0, Math.round((Date.now() - t) / 60000));
+  if (min < 1) return "방금 전";
+  if (min < 60) return min + "분 전";
+  if (min < 48 * 60) return Math.floor(min / 60) + "시간 전";
+  return Math.floor(min / 1440) + "일 전";
+}
+
+function renderList(target, items, emptyText) {
   target.replaceChildren();
   if (!items || !items.length) {
-    target.append(el("li", { class: "empty" }, "아직 수집된 데이터가 없어요. 첫 자동 수집을 기다리는 중입니다."));
+    target.append(el("li", { class: "empty" }, emptyText || "아직 수집된 데이터가 없어요. 첫 자동 수집을 기다리는 중입니다."));
     return;
   }
   for (const it of items) {
     const li = el("li", { class: "row" });
     li.append(el("span", { class: "rank" }, it.rank));
     const kw = el("div", { class: "kw" });
-    kw.append(el("a", { href: it.search_url, target: "_blank", rel: "noopener" }, it.keyword));
+    kw.append(link(it.search_url, it.keyword));
     if (it.news_title) {
       const news = el("span", { class: "news" });
-      news.append(it.news_url
-        ? el("a", { href: it.news_url, target: "_blank", rel: "noopener" }, it.news_title)
-        : document.createTextNode(it.news_title));
+      news.append(link(it.news_url, it.news_title));
       kw.append(news);
     }
     li.append(kw);
@@ -149,46 +169,62 @@ function renderList(target, items) {
 }
 
 function renderRanking(history) {
-  const stats = new Map();
-  for (const snap of history) {
-    for (const it of snap.items) {
-      const s = stats.get(it.keyword) || { count: 0, best: 99 };
-      s.count += 1;
-      s.best = Math.min(s.best, it.rank);
-      stats.set(it.keyword, s);
-    }
-  }
   const tbody = document.getElementById("ranking");
   tbody.replaceChildren();
-  const top = [...stats.entries()].sort((a, b) => b[1].count - a[1].count || a[1].best - b[1].best).slice(0, 15);
+  const stats = new Map();
+  for (const snap of history || []) {
+    for (const it of snap.items) {
+      const key = String(it.keyword).replace(/\s+/g, "").toLowerCase();  // "앤 트로픽" = "앤트로픽"
+      const s = stats.get(key) || { count: 0, best: 99, forms: new Map() };
+      s.count += 1;
+      s.best = Math.min(s.best, it.rank);
+      s.forms.set(it.keyword, (s.forms.get(it.keyword) || 0) + 1);
+      stats.set(key, s);
+    }
+  }
+  const top = [...stats.values()].sort((a, b) => b.count - a.count || a.best - b.best).slice(0, 15);
   if (!top.length) {
     const tr = el("tr");
-    tr.append(el("td", { colspan: "3", class: "empty" }, "기록이 쌓이면 여기에 표시돼요."));
+    tr.append(el("td", { colspan: "3", class: "empty" }, history ? "기록이 쌓이면 여기에 표시돼요." : LOAD_FAILED));
     tbody.append(tr);
     return;
   }
-  for (const [kw, s] of top) {
+  for (const s of top) {
+    const kw = [...s.forms.entries()].sort((a, b) => b[1] - a[1])[0][0];
     const tr = el("tr");
     tr.append(el("td", {}, kw), el("td", { class: "num" }, s.count + "회"), el("td", { class: "num" }, s.best + "위"));
     tbody.append(tr);
   }
 }
 
-const historyPromise = fetch("data/history.json", { cache: "no-store" })
-  .then(res => (res.ok ? res.json() : []))
-  .catch(() => []);
+// null = could not load (shown as an error), [] / {} = loaded but nothing collected yet
+const getJson = url => fetch(url, { cache: "no-cache" })
+  .then(res => (res.ok ? res.json() : res.status === 404 ? undefined : null))
+  .catch(() => null);
+const historyPromise = getJson("data/history.json").then(h => (h === undefined ? [] : h));
+const latestPromise = getJson("data/latest.json")
+  .then(l => (l && l.items ? l : historyPromise.then(h => (h ? h[0] || {} : null))));
+
+function renderLatest(latest) {
+  const time = document.getElementById("latest-time");
+  time.replaceChildren();
+  if (latest && latest.collected_at) {
+    time.append(latest.collected_at + " (한국시간) · ", el("span", { class: "age" }, age(latest.collected_at)));
+  } else {
+    time.textContent = latest ? "수집 대기 중" : "불러오기 실패";
+  }
+  renderList(document.getElementById("latest"), latest && latest.items, latest ? undefined : LOAD_FAILED);
+}
 
 async function load() {
+  latestPromise.then(renderLatest);
   const history = await historyPromise;
-
-  const latest = history[0];
-  document.getElementById("latest-time").textContent = latest ? latest.collected_at + " (한국시간)" : "수집 대기 중";
-  renderList(document.getElementById("latest"), latest && latest.items);
 
   const select = document.getElementById("snap-select");
   select.replaceChildren();
-  history.forEach((snap, i) => select.append(el("option", { value: i }, snap.collected_at)));
-  const showSnap = () => renderList(document.getElementById("snapshot"), history[select.value] && history[select.value].items);
+  (history || []).forEach((snap, i) => select.append(el("option", { value: i }, snap.collected_at)));
+  const showSnap = () => renderList(document.getElementById("snapshot"),
+    history && history[select.value] && history[select.value].items, history ? undefined : LOAD_FAILED);
   select.onchange = showSnap;
   showSnap();
 
@@ -204,7 +240,12 @@ const intro = (() => {
   const ctx = canvas.getContext("2d");
   const bar = el.querySelector(".bar");
   const soundBtn = document.getElementById("intro-sound");
-  let start = 0, raf = 0, ac = null, soundOn = false, data = null, playing = false;
+  const skipBtn = document.getElementById("intro-skip");
+  const page = document.querySelector("main");
+  // active: overlay is up (incl. the short wait for data/fonts); playing: frames are running.
+  // run: bumped by every play/finish, so a play() still waiting can tell it was cancelled.
+  let start = 0, raf = 0, ac = null, soundOn = false, data = null;
+  let active = false, playing = false, run = 0, hideTimer = 0, returnFocus = null;
 
   function size() {
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -234,30 +275,50 @@ const intro = (() => {
     raf = requestAnimationFrame(tick);
   }
   function finish() {
-    if (!playing) return;
-    playing = false;
+    if (!active) return;
+    active = false; playing = false; run++;
     cancelAnimationFrame(raf);
     stopSound();
     el.classList.add("leaving");
-    setTimeout(() => { el.hidden = true; el.classList.remove("leaving"); }, 650);
+    hideTimer = setTimeout(() => { el.hidden = true; el.classList.remove("leaving"); }, 650);
+    page.inert = false;
+    if (returnFocus && returnFocus.isConnected) returnFocus.focus();
     try { localStorage.setItem("reel-seen", "1"); } catch (e) {}
     if (location.hash === "#intro") history.replaceState(null, "", location.pathname + location.search);
   }
+  // resolves once the (non-blocking) font stylesheet has loaded, failed, or taken too long
+  function fontCss(ms) {
+    const link = document.getElementById("reel-fonts");
+    if (!link || link.media === "all") return Promise.resolve();
+    return new Promise(r => {
+      link.addEventListener("load", r, { once: true });
+      link.addEventListener("error", r, { once: true });
+      setTimeout(r, ms);
+    });
+  }
   async function play() {
-    if (playing || !window.Reel) return;
+    if (active || !window.Reel) return;
+    active = true;
+    const id = ++run;
+    clearTimeout(hideTimer);
     el.hidden = false; el.classList.remove("leaving");
+    returnFocus = document.activeElement;
+    page.inert = true;
+    skipBtn.focus();
     size();
     const timeout = ms => new Promise(r => setTimeout(r, ms));
-    const snaps = await Promise.race([historyPromise, timeout(1500).then(() => [])]);
-    data = Reel.dataFrom(snaps && snaps[0]);
-    await Reel.loadFonts(2500);
+    const snap = await Promise.race([latestPromise, timeout(1500).then(() => null)]);
+    if (id !== run) return;  // skipped while waiting
+    data = Reel.dataFrom(snap);
+    await Promise.race([fontCss(2500).then(() => Reel.loadFonts(2500)), timeout(2500)]);
+    if (id !== run) return;
     playing = true;
     start = performance.now();
     if (soundOn) startSound(0);
     raf = requestAnimationFrame(tick);
   }
   soundBtn.onclick = () => setSound(!soundOn);
-  document.getElementById("intro-skip").onclick = finish;
+  skipBtn.onclick = finish;
   document.getElementById("replay-intro").onclick = () => { setSound(true); play(); };
   addEventListener("keydown", e => { if (e.key === "Escape") finish(); });
   addEventListener("resize", () => { if (playing) size(); });
