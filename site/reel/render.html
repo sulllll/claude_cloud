@@ -15,13 +15,13 @@
   let data = null;
   window.ready = (async () => {
     try { data = Reel.dataFrom(await (await fetch('../data/latest.json', { cache: 'no-store' })).json()); } catch (e) {}
-    await Reel.loadFonts(15000);
+    await Reel.loadFonts(15000, data);
     return { fonts: [...document.fonts].filter(f => f.status === 'loaded').map(f => f.family + ' ' + f.weight), keywords: data ? data.keywords.length : 0 };
   })();
   window.renderAt = (t, q) => { Reel.frame(ctx, t, data); return ctx.canvas.toDataURL('image/jpeg', q || 0.93); };
   window.renderAudio = async () => {
     const sr = 48000, oac = new OfflineAudioContext(2, Math.ceil(sr * Reel.DURATION), sr);
-    Reel.buildAudio(oac, 0, 0);
+    Reel.buildAudio(oac, 0, 0, data ? data.keywords.length : 10);
     const buf = await oac.startRendering();
     const L = buf.getChannelData(0), R = buf.getChannelData(1), n = L.length;
     const out = new DataView(new ArrayBuffer(44 + n * 4));

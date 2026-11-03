@@ -2,7 +2,10 @@
  * MARKET PULSE — a 15 second motion-graphics reel, drawn and scored entirely in code.
  *
  * Reel.frame(ctx, t, data)       draws the frame at time t (seconds) onto ctx's canvas
- * Reel.buildAudio(ac, when, off) schedules the soundtrack on any (Offline)AudioContext
+ * Reel.buildAudio(ac, when, off, n) schedules the soundtrack on any (Offline)AudioContext
+ *                                (n = number of keywords in the countdown, default 10)
+ * Reel.loadFonts(ms, data)       loads every web-font slice the reel will draw (copy + data)
+ * Reel.dispose()                 frees the offscreen buffers between plays
  *
  * Everything is deterministic in t, so the same code drives the live intro on the
  * blog and the frame-by-frame MP4 render (scripts/render_reel.mjs).
@@ -136,6 +139,15 @@
     if ('letterSpacing' in g) g.letterSpacing = '0px';
   }
   function typed(s, p) { return s.slice(0, Math.round(s.length * clamp(p))); }
+  // the countdown's fly-bys (all ranks but #1) share the 1.44 s window that 10 keywords use
+  function flyStep(n) { return 1.44 / Math.max(1, n - 1); }
+  // cut a keyword with … so it fits maxW at the current font (whole characters, emoji kept intact)
+  function fitKeyword(g, s, maxW) {
+    if (g.measureText(s).width <= maxW) return s;
+    const chars = Array.from(s);
+    while (chars.length > 1 && g.measureText(chars.join('') + '…').width > maxW) chars.pop();
+    return chars.join('').trimEnd() + '…';
+  }
 
   function odometer(g, value, decimals, x, y, size, color, align = 'left') {
     const str = fmt(value, decimals);
@@ -219,7 +231,10 @@
     let sec = SECTIONS[0][1];
     for (const [s, n] of SECTIONS) if (t >= s) sec = n;
     text(g, sec, W - m - 18, m + 30, f, C.dim, 'right', 'alphabetic', 3);
-    if (Math.floor(t * 2) % 2 === 0) { g.fillStyle = C.red; g.beginPath(); g.arc(W - m - 18 - g.measureText(sec).width - 34, m + 24, 6, 0, TAU); g.fill(); }
+    if (Math.floor(t * 2) % 2 === 0) {
+      g.font = f; const secW = g.measureText(sec).width + sec.length * 3;  // text() draws it with 3px letter spacing
+      g.fillStyle = C.red; g.beginPath(); g.arc(W - m - 18 - secW - 34, m + 24, 6, 0, TAU); g.fill();
+    }
     const fr = Math.floor(t * 30), tc = `00:00:${String(Math.floor(t)).padStart(2, '0')}:${String(fr % 30).padStart(2, '0')}`;
     text(g, 'TC ' + tc, m + 18, H - m - 16, f, C.dim, 'left', 'alphabetic', 3);
     text(g, '1920×1080 · CANVAS · WEB AUDIO', W - m - 18, H - m - 16, f, C.dim, 'right', 'alphabetic', 3);
@@ -712,13 +727,14 @@
     // header
     const ha = prog(t, 11.55, 11.8) * (1 - prog(t, 13.35, 13.5));
     text(g, 'WHAT KOREA IS SEARCHING  ·  LIVE', 960, 150, `500 24px ${F.mono}`, `rgba(243,245,250,${0.6 * ha})`, 'center', 'alphabetic', 8);
-    text(g, `실시간 검색어 TOP 10${data && data.stamp ? '  ·  ' + data.stamp : ''}`, 960, 205, `700 38px ${F.kr}`, `rgba(243,245,250,${ha})`, 'center');
-
-    // keywords fly through, 10 → 1
     const items = kws.slice(0, 10);
+    text(g, `실시간 검색어 TOP ${items.length}${data && data.stamp ? '  ·  ' + data.stamp : ''}`, 960, 205, `700 38px ${F.kr}`, `rgba(243,245,250,${ha})`, 'center');
+
+    // keywords fly through, N → 1 (the fly-bys share one window, so fewer keywords leave no gap)
+    const step = flyStep(items.length);
     for (let j = 0; j < items.length; j++) {
       const rank = items.length - j, it = items[rank - 1];
-      const ts = rank === 1 ? 13.08 : 11.55 + j * 0.16;
+      const ts = rank === 1 ? 13.08 : 11.55 + j * step;
       const last = rank === 1;
       let sc, alpha, x, y;
       if (!last) {
@@ -739,7 +755,8 @@
       g.globalAlpha = clamp(alpha);
       g.translate(x, y); g.scale(sc, sc);
       g.font = `900 120px ${F.kr}`;
-      const kwW = g.measureText(it.keyword).width;
+      const kw = fitKeyword(g, it.keyword, 2200);
+      const kwW = g.measureText(kw).width;
       const fit = Math.min(1, 1100 / Math.max(1, kwW));
       g.scale(fit, fit);
       const rankS = `#${rank}`;
@@ -749,7 +766,7 @@
       g.strokeStyle = C.amber; g.lineWidth = 3;
       g.textAlign = 'left'; g.textBaseline = 'middle'; g.strokeText(rankS, x0, 0);
       if (last) glow(g, 'rgba(255,182,39,0.7)', 40);
-      text(g, it.keyword, x0 + rw + 40, 6, `900 120px ${F.kr}`, last ? C.amber : C.white, 'left', 'middle');
+      text(g, kw, x0 + rw + 40, 6, `900 120px ${F.kr}`, last ? C.amber : C.white, 'left', 'middle');
       noGlow(g);
       if (it.traffic) text(g, `${it.traffic} 검색`, x0 + rw + 44, 96, `500 32px ${F.kr}`, C.dim, 'left', 'middle');
       g.restore();
@@ -875,6 +892,7 @@
     t = clamp(t, 0, DURATION);
     if (!grain) grain = makeGrain();
     const cw = target.canvas.width, ch = target.canvas.height;
+    if (!cw || !ch) return;
     const s = Math.min(cw / W, ch / H), ox = (cw - W * s) / 2, oy = (ch - H * s) / 2;
     S = s;
     const buf = buffer('main', cw, ch), g = buf.getContext('2d');
@@ -916,8 +934,9 @@
   }
 
   // ---------------------------------------------------------------- soundtrack (Web Audio synthesis)
-  function buildAudio(ac, when, offset) {
+  function buildAudio(ac, when, offset, count) {
     offset = offset || 0;
+    const n = Math.max(1, Math.min(10, count || 10));
     const master = ac.createGain(); master.gain.value = 0.9;
     const comp = ac.createDynamicsCompressor();
     comp.threshold.value = -16; comp.ratio.value = 5; comp.attack.value = 0.003; comp.release.value = 0.2;
@@ -1090,7 +1109,7 @@
     kick(9.0, true);
     whoosh(11.2, 0.3, false);
     // keyword fly-bys
-    for (let j = 0; j < 9; j++) whoosh(11.55 + j * 0.16 + 0.24, 0.22, j % 2 === 0);
+    for (let j = 0; j < n - 1; j++) whoosh(11.55 + j * flyStep(n) + 0.24, 0.22, j % 2 === 0);
     blip(13.08, 1760, 0.25, 0.05, "triangle"); blip(13.08, 880, 0.35, 0.06, "triangle");
     riser(12.9, 0.6, 0.25);
     // outro
@@ -1107,15 +1126,32 @@
 
   // latest.json snapshot -> reel data
   function dataFrom(snap) {
-    if (!snap || !snap.items || !snap.items.length) return null;
-    return { keywords: snap.items.map(i => ({ keyword: i.keyword, traffic: i.traffic })), stamp: snap.collected_at };
+    if (!snap || !Array.isArray(snap.items)) return null;
+    const keywords = snap.items
+      .filter(i => i && typeof i.keyword === 'string' && i.keyword.trim())
+      .map(i => ({ keyword: i.keyword.trim(), traffic: typeof i.traffic === 'string' ? i.traffic : '' }));
+    if (!keywords.length) return null;
+    return { keywords, stamp: typeof snap.collected_at === 'string' ? snap.collected_at : '' };
   }
+  // Every fixed string the reel draws. Google Fonts serves Noto Sans KR in ~120 unicode-range
+  // slices, and document.fonts.load() only fetches the slices its sample text touches, so the
+  // sample must hold all of this copy (tests/test_reel_copy.py checks nothing is missing).
+  const COPY = 'MARKET PULSE — REEL 2026 · OPENING BELL BULL RUN SELL-OFF REBOUND TC 1920×1080 CANVAS WEB AUDIO ' +
+    'KOSPI 코스피 종합지수 장중 최대 낙폭 INTRADAY LOW 서킷브레이커 발동 전 종목 매매 일시 정지 저점 대비 반등 ' +
+    '섹터별 등락률 LIVE HEATMAP 인공지능 반도체 에너지 바이오 금융 전기차 가상자산 금 외환 리츠 조선·해운 게임 ' +
+    '금리 환율 비트코인 엔비디아 유가 삼성전자 금값 테슬라 실시간 검색어 TOP 지금 1위 트렌드 기록 검색 ' +
+    'WHAT KOREA IS SEARCHING ▌▲▼⚠…#%+-.,:0123456789 ' +
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
   const FONTS = ['700 100px "Space Grotesk"', '500 100px "JetBrains Mono"', '700 100px "JetBrains Mono"',
     '500 100px "Noto Sans KR"', '700 100px "Noto Sans KR"', '900 100px "Noto Sans KR"'];
-  function loadFonts(timeoutMs) {
+  function loadFonts(timeoutMs, data) {
     if (typeof document === 'undefined' || !document.fonts) return Promise.resolve();
-    const all = Promise.all(FONTS.map(f => document.fonts.load(f, '가A1'))).catch(() => {});
+    const extra = data ? [data.stamp || '', ...data.keywords.map(k => k.keyword + ' ' + (k.traffic || ''))].join(' ') : '';
+    const sample = COPY + ' ' + extra;
+    const all = Promise.all(FONTS.map(f => document.fonts.load(f, sample))).catch(() => {});
     return Promise.race([all, new Promise(r => setTimeout(r, timeoutMs || 2500))]);
   }
-  root.Reel = { W, H, DURATION, frame, buildAudio, dataFrom, loadFonts };
+  // release the full-screen offscreen canvases (about 44 MB at 2560×1440); frame() re-creates them
+  function dispose() { for (const b of Object.values(bufs)) { b.width = 0; b.height = 0; } }
+  root.Reel = { W, H, DURATION, frame, buildAudio, dataFrom, loadFonts, dispose };
 })(typeof window !== 'undefined' ? window : globalThis);

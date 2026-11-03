@@ -257,7 +257,7 @@ const intro = (() => {
   function startSound(offset) {
     try {
       ac = new (window.AudioContext || window.webkitAudioContext)();
-      Reel.buildAudio(ac, ac.currentTime + 0.05, offset + 0.05);
+      Reel.buildAudio(ac, ac.currentTime + 0.05, offset + 0.05, data ? data.keywords.length : 10);
     } catch (e) { ac = null; }
   }
   function stopSound() { if (ac) { ac.close().catch(() => {}); ac = null; } }
@@ -280,7 +280,11 @@ const intro = (() => {
     cancelAnimationFrame(raf);
     stopSound();
     el.classList.add("leaving");
-    hideTimer = setTimeout(() => { el.hidden = true; el.classList.remove("leaving"); }, 650);
+    hideTimer = setTimeout(() => {
+      el.hidden = true; el.classList.remove("leaving");
+      canvas.width = canvas.height = 0;  // free the full-screen canvas and the reel's buffers
+      if (Reel.dispose) Reel.dispose();
+    }, 650);
     page.inert = false;
     if (returnFocus && returnFocus.isConnected) returnFocus.focus();
     try { localStorage.setItem("reel-seen", "1"); } catch (e) {}
@@ -310,7 +314,7 @@ const intro = (() => {
     const snap = await Promise.race([latestPromise, timeout(1500).then(() => null)]);
     if (id !== run) return;  // skipped while waiting
     data = Reel.dataFrom(snap);
-    await Promise.race([fontCss(2500).then(() => Reel.loadFonts(2500)), timeout(2500)]);
+    await Promise.race([fontCss(2500).then(() => Reel.loadFonts(2500, data)), timeout(2500)]);
     if (id !== run) return;
     playing = true;
     start = performance.now();
