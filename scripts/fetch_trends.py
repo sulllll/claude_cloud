@@ -48,6 +48,8 @@ def parse_rss(xml_bytes):
             continue
         news = next((c for c in item if local(c.tag) == "news_item"), None)
         keyword = child_text(item, "title")
+        if not keyword:  # a blank entry would take a rank and show as an empty row
+            continue
         items.append({
             "rank": len(items) + 1,
             "keyword": keyword,
@@ -67,6 +69,26 @@ def fetch():
         return resp.read()
 
 
+def snapshot_rows(snapshot):
+    """One CSV/sheet row per keyword, in CSV_HEADER order."""
+    return [[snapshot["collected_at"], it["rank"], it["keyword"], it["traffic"], it["news_title"], it["news_url"]]
+            for it in snapshot["items"]]
+
+
+def sheet_rows(snapshot):
+    """Rows for the Google Sheet, with the text columns forced to literal text.
+
+    The sheet is written with USER_ENTERED so collected_at becomes a real date,
+    but that also makes Sheets interpret text: a keyword such as "=..." would run
+    as a formula, and "1987" or "010" would turn into numbers. A leading
+    apostrophe keeps the cell as plain text (Sheets hides the apostrophe).
+    """
+    rows = []
+    for collected_at, rank, *texts in snapshot_rows(snapshot):
+        rows.append([collected_at, rank] + ["'" + t if t else t for t in texts])
+    return rows
+
+
 def save(snapshot):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -83,8 +105,7 @@ def save(snapshot):
         w = csv.writer(f)
         if new_file:
             w.writerow(CSV_HEADER)
-        for it in snapshot["items"]:
-            w.writerow([snapshot["collected_at"], it["rank"], it["keyword"], it["traffic"], it["news_title"], it["news_url"]])
+        w.writerows(snapshot_rows(snapshot))
 
 
 def append_to_sheet(snapshot):
@@ -99,8 +120,7 @@ def append_to_sheet(snapshot):
     ws = gc.open_by_key(sheet_id).sheet1
     if not ws.row_values(1):
         ws.append_row(CSV_HEADER)
-    rows = [[snapshot["collected_at"], it["rank"], it["keyword"], it["traffic"], it["news_title"], it["news_url"]]
-            for it in snapshot["items"]]
+    rows = sheet_rows(snapshot)
     ws.append_rows(rows, value_input_option="USER_ENTERED")
     print(f"Google Sheet: appended {len(rows)} rows")
 

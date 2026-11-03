@@ -5,11 +5,13 @@
 - 블로그 주소: https://sulllll.github.io/claude_cloud/
 - 기록 파일: `site/data/history.json`, `site/data/history.csv`
 
+> **실제 수집 간격**: GitHub는 예약 실행을 붐비는 시간에 미루거나 건너뜁니다. 이 저장소는 9/26~11/3 동안 180번 실행됐습니다(하루 평균 약 4.7번, 간격은 보통 3~7시간). 정확히 매시간이 필요하면 외부 예약 서비스에서 `workflow_dispatch`를 호출해야 합니다.
+
 ## 구조
 
 | 파일 | 역할 |
 |---|---|
-| `.github/workflows/trends.yml` | 매시간 07분(UTC) 자동 실행 → 수집 → 기록 커밋 → 블로그 배포 |
+| `.github/workflows/trends.yml` | 매시간 07분(UTC) 자동 실행 → 수집 → 기록 커밋 → 블로그 배포. 기록·배포는 기본 브랜치에서만 (다른 브랜치는 테스트와 시험 수집만) |
 | `scripts/fetch_trends.py` | 구글 트렌드 RSS에서 TOP 10을 가져와 기록에 추가 (+ 구글 시트에도 추가, 선택) |
 | `site/index.html` | 블로그 화면 (지금 TOP 10 / 시간대별 기록 / 자주 올라온 키워드) |
 | `tests/test_parse.py` | 파싱·기록 쌓기 테스트 |

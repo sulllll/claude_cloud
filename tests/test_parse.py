@@ -1,6 +1,7 @@
 import sys
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import fetch_trends  # noqa: E402
@@ -43,14 +44,32 @@ class ParseTest(unittest.TestCase):
         import json
         import tempfile
 
-        with tempfile.TemporaryDirectory() as d:
-            fetch_trends.DATA_DIR = Path(d)
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(fetch_trends, "DATA_DIR", Path(d)):
             for t in ["2026-09-26 13:00", "2026-09-26 14:00"]:
                 fetch_trends.save({"collected_at": t, "geo": "KR", "items": fetch_trends.parse_rss(sample_rss(10))})
             history = json.loads((Path(d) / "history.json").read_text(encoding="utf-8"))
             self.assertEqual([h["collected_at"] for h in history], ["2026-09-26 14:00", "2026-09-26 13:00"])
             rows = (Path(d) / "history.csv").read_text(encoding="utf-8").strip().splitlines()
             self.assertEqual(len(rows), 1 + 20)
+            self.assertEqual(rows[1].split(",")[:4], ["2026-09-26 13:00", "1", "키워드1", "1000+"])
+        self.assertNotEqual(fetch_trends.DATA_DIR, Path(d))  # the real data folder is restored
+
+    def test_blank_keyword_skipped(self):
+        xml = sample_rss(3).replace("<title>키워드2</title>".encode(), b"<title>  </title>")
+        items = fetch_trends.parse_rss(xml)
+        self.assertEqual([(it["rank"], it["keyword"]) for it in items], [(1, "키워드1"), (2, "키워드3")])
+
+    def test_sheet_rows_are_literal_text(self):
+        snapshot = {"collected_at": "2026-09-26 13:00", "geo": "KR", "items": [
+            {"rank": 1, "keyword": "=IMPORTXML(\"x\")", "traffic": "2000+", "news_title": "", "news_url": "https://a/b"},
+            {"rank": 2, "keyword": "1987", "traffic": "500+", "news_title": "+뉴스", "news_url": ""},
+        ]}
+        self.assertEqual(fetch_trends.sheet_rows(snapshot), [
+            ["2026-09-26 13:00", 1, "'=IMPORTXML(\"x\")", "'2000+", "", "'https://a/b"],
+            ["2026-09-26 13:00", 2, "'1987", "'500+", "'+뉴스", ""],
+        ])
+        # the CSV keeps the original values
+        self.assertEqual(fetch_trends.snapshot_rows(snapshot)[0][2], "=IMPORTXML(\"x\")")
 
 
 if __name__ == "__main__":
